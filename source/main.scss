@@ -1,4 +1,7 @@
 @use 'config/reset';
+@use 'config/variaveis';
+@use 'sass:math';
+
 
 @mixin elementoForm() {
     padding: 8px;
@@ -7,8 +10,12 @@
     margin-bottom: 12px;
 }
 
+@function pixelEm($alvoPixel, $contextoPixel: 16px){
+    @return math.div($alvoPixel, $contextoPixel)+em;
+}
+
 body {
-    background-color: antiquewhite;
+    background-color: variaveis.$corFundo;
 }
 
 .container {
@@ -20,8 +27,8 @@ body {
 
 header {
     padding: 16px 0;
-    ;
-    background-color: palegreen;
+
+    background-color: variaveis.$corPrincipal;
 }
 
 .form-container {
@@ -30,6 +37,12 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    max-width: 700px;
+
+    h2 {
+        font-size: pixelEm(48px);
+        text-align: center;
+    }
 
 
 
@@ -38,15 +51,35 @@ header {
         max-width: 400px;
         margin-top: 40px;
 
+        label {
+            cursor: pointer;
+            font-weight: bold
+        }
+
         input {
             @include elementoForm();
             background-color: transparent;
             border: none;
-            border-bottom: 1px solid black;
+            border-bottom: 3px solid variaveis.$corSecundaria;
         }
     
         button {
             @include elementoForm();
+            background-color: variaveis.$corPrincipal;
+            border-color: variaveis.$corPrincipal;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+
+            &:hover {
+                background-color: lighten(variaveis.$corPrincipal, 15%);
+            }
         }
+    }
+}
+
+@media screen and (max-width: variaveis.$mobile) {
+    .container {
+        max-width: 80%;
     }
 }
