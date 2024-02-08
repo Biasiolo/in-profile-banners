@@ -6,7 +6,8 @@
 }
 
 body {
-  background-color: #e55039;
+  background-color: #b8e994;
+  color: #052034;
 }
 
 .container {
@@ -18,7 +19,7 @@ body {
 
 header {
   padding: 16px 0;
-  background-color: #eb2f06;
+  background-color: #fa983a;
 }
 
 .form-container {
@@ -56,14 +57,14 @@ header {
   display: block;
   width: 100%;
   margin-bottom: 12px;
-  background-color: #eb2f06;
-  border-color: #eb2f06;
+  background-color: #fa983a;
+  border-color: #fa983a;
   font-size: 18px;
   font-weight: 700;
   cursor: pointer;
 }
 .form-container form button:hover {
-  background-color: #fa6443;
+  background-color: #fcbf85;
 }
 
 @media screen and (max-width: 767px) {
