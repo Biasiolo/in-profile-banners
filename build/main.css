@@ -26,7 +26,7 @@ header h1 {
   font-size: 2rem;
 }
 header .logo {
-  max-width: 4vw;
+  max-width: 60px;
 }
 header nav ul {
   list-style: none;
