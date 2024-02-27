@@ -5,37 +5,50 @@
 
 }
 
-body {
-    background-color: white;
-    list-style: none;
-    text-decoration: none;
+html {
+    body {
+        background-color: #f4f2ee;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+
+    }
 }
 
 // Arquivo: styles.scss
 
 header {
-    background-color: #0e76a8; // Cor de fundo azul
+    background-color: #0a66c2; // Cor de fundo azul
     color: white; // Cor do texto branco
     text-align: center;
     padding: 1.5rem 0; // Adiciona espaçamento interno superior e inferior
+    margin-bottom: 12px;
 
     h1 {
         margin-bottom: 1rem; // Adiciona espaçamento inferior ao título
         font-size: 2rem; // Tamanho da fonte do título
     }
 
+    .logo {
+        max-width: 4vw;
+    }
+
     nav {
         ul {
             list-style: none;
-            display: flex; 
-            justify-content: center; 
+            display: flex;
+            justify-content: center;
 
             li {
-                margin-right: 1rem; 
+                margin-right: 1rem;
+
                 a {
-                    text-decoration: none; 
-                    color: #fff; 
-                    font-weight: bold; 
+                    text-decoration: none;
+                    color: #fff;
+                    font-weight: bold;
 
                     &:hover {
                         border-radius: 8px;
@@ -47,3 +60,36 @@ header {
     }
 }
 
+#sobre {
+    background-color: rgb(255, 255, 255);
+    padding: 0.5rem;
+    max-width: 80vw;
+    margin: 0 auto;
+    margin-bottom: 12px;
+    border-radius: 12px;
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+}
+
+
+
+
+
+
+
+.modal-content {
+    max-width: 20vw;
+    margin: 0 auto;
+}
+
+.modal-header {
+    background-color: #0e76a8;
+    color: white;
+
+}

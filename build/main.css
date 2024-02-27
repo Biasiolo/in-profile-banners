@@ -4,21 +4,29 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: white;
-  list-style: none;
-  text-decoration: none;
+html body {
+  background-color: #f4f2ee;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 header {
-  background-color: #0e76a8;
+  background-color: #0a66c2;
   color: white;
   text-align: center;
   padding: 1.5rem 0;
+  margin-bottom: 12px;
 }
 header h1 {
   margin-bottom: 1rem;
   font-size: 2rem;
+}
+header .logo {
+  max-width: 4vw;
 }
 header nav ul {
   list-style: none;
@@ -36,6 +44,31 @@ header nav ul li a {
 header nav ul li a:hover {
   border-radius: 8px;
   background-color: aqua;
+}
+
+#sobre {
+  background-color: rgb(255, 255, 255);
+  padding: 0.5rem;
+  max-width: 80vw;
+  margin: 0 auto;
+  margin-bottom: 12px;
+  border-radius: 12px;
+}
+#sobre h2 {
+  font-size: 1.8rem;
+}
+#sobre p {
+  font-size: 1.3rem;
+}
+
+.modal-content {
+  max-width: 20vw;
+  margin: 0 auto;
+}
+
+.modal-header {
+  background-color: #0e76a8;
+  color: white;
 }
 
 /*# sourceMappingURL=main.css.map */
