@@ -38,7 +38,8 @@ header {
                     font-weight: bold; 
 
                     &:hover {
-                        text-decoration: underline; 
+                        border-radius: 8px;
+                        background-color: aqua;
                     }
                 }
             }

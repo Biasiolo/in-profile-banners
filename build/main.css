@@ -34,7 +34,8 @@ header nav ul li a {
   font-weight: bold;
 }
 header nav ul li a:hover {
-  text-decoration: underline;
+  border-radius: 8px;
+  background-color: aqua;
 }
 
 /*# sourceMappingURL=main.css.map */
