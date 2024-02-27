@@ -1,86 +1,48 @@
-@use 'config/reset';
-@use 'config/variaveis';
-@use 'sass:math';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
-
-@mixin elementoForm() {
-    padding: 8px;
-    display: block;
-    width: 100%;
-    margin-bottom: 12px;
-}
-
-@function pixelEm($alvoPixel, $contextoPixel: 16px){
-    @return math.div($alvoPixel, $contextoPixel)+em;
 }
 
 body {
-    background-color: variaveis.$corFundo;
-    color: darken(variaveis.$fontColor, 10%);
+    background-color: white;
+    list-style: none;
+    text-decoration: none;
 }
 
-.container {
-    max-width: 900px;
-    text-align: center;
-    margin: 0 auto;
-    width: 100%;
-}
+// Arquivo: styles.scss
 
 header {
-    padding: 16px 0;
+    background-color: #0e76a8; // Cor de fundo azul
+    color: white; // Cor do texto branco
+    text-align: center;
+    padding: 1.5rem 0; // Adiciona espaçamento interno superior e inferior
 
-    background-color: variaveis.$corPrincipal;
-}
-
-.form-container {
-    height: calc(100vh - 70px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 700px;
-
-    h2 {
-        font-size: pixelEm(48px);
-        text-align: center;
+    h1 {
+        margin-bottom: 1rem; // Adiciona espaçamento inferior ao título
+        font-size: 2rem; // Tamanho da fonte do título
     }
 
+    nav {
+        ul {
+            list-style: none;
+            display: flex; 
+            justify-content: center; 
 
+            li {
+                margin-right: 1rem; 
+                a {
+                    text-decoration: none; 
+                    color: #fff; 
+                    font-weight: bold; 
 
-    form {
-        width: 100%;
-        max-width: 400px;
-        margin-top: 40px;
-
-        label {
-            cursor: pointer;
-            font-weight: bold
-        }
-
-        input {
-            @include elementoForm();
-            background-color: transparent;
-            border: none;
-            border-bottom: 3px solid variaveis.$corSecundaria;
-        }
-    
-        button {
-            @include elementoForm();
-            background-color: variaveis.$corPrincipal;
-            border-color: variaveis.$corPrincipal;
-            font-size: 18px;
-            font-weight: 700;
-            cursor: pointer;
-
-            &:hover {
-                background-color: lighten(variaveis.$corPrincipal, 15%);
+                    &:hover {
+                        text-decoration: underline; 
+                    }
+                }
             }
         }
     }
 }
 
-@media screen and (max-width: variaveis.$mobile) {
-    .container {
-        max-width: 80%;
-    }
-}
