@@ -171,6 +171,11 @@ footer a {
   text-decoration: none;
 }
 
+.teste a {
+  text-align: center;
+  justify-content: center;
+}
+
 .modal-content {
   max-width: 20vw;
   margin: 0 auto;
