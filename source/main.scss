@@ -71,7 +71,7 @@ header {
     margin-bottom: 12px;
     border-radius: 12px;
     border: 1px solid rgb(209, 209, 209);
-    
+
 
     h2 {
         font-size: 1.5rem;
@@ -85,7 +85,7 @@ header {
     max-width: 90vw;
     margin: 0 auto;
     justify-content: space-between;
-    
+
 
 
     h3 {
@@ -118,18 +118,14 @@ header {
         height: 100%;
         font-size: 1rem;
         border-radius: 12px;
-        
+
 
         .card-body1 {
             font-size: 1.05rem;
             font-weight: 500;
-            
         }
     }
 
-    
-
-    
     .gratis {
         font-size: 3.5rem;
         font-family: cursive;
@@ -173,14 +169,14 @@ header {
         border-radius: 30px;
         padding: 5px 20px;
         background-color: #dcedff;
-        color:#0a66c2;
+        color: #0a66c2;
         border: 2px solid #0a66c2;
         font-weight: 600;
 
         &:hover {
             background-color: #0a66c2;
             color: white;
-  
+
         }
     }
 }
@@ -188,14 +184,16 @@ header {
 .card22 {
 
     box-shadow: 0 0 10px rgba(30, 39, 46, 0.4);
+
     &:hover {
         transform: scale(1.02);
 
     }
 }
+
 .card-body {
     text-align: center;
-    
+
 
     .card-title {
         border-bottom: 1px solid rgb(209, 209, 209);
