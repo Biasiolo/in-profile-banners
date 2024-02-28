@@ -38,8 +38,6 @@ header {
             transform: scale(1.1);
         }
     }
-
-    
 }
 
 #sobre {
@@ -201,7 +199,8 @@ footer {
 
 
 .modal-content {
-    max-width: 20vw;
+    max-width: 200px;
+    text-align: center;
     margin: 0 auto;
 }
 
