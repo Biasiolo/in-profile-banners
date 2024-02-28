@@ -31,22 +31,8 @@ header h1 {
 header .logo {
   max-width: 60px;
 }
-header nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-}
-header nav ul li {
-  margin-right: 1rem;
-}
-header nav ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-}
-header nav ul li a:hover {
-  border-radius: 8px;
-  background-color: aqua;
+header .logo:hover {
+  transform: scale(1.1);
 }
 
 #sobre {
