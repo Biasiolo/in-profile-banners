@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+$(document).ready(function () {
     const data = [
         {
           imageUrl: "./source/images/1.png",
@@ -161,111 +161,95 @@ document.addEventListener("DOMContentLoaded", function () {
             imageFileName: "20.png",
             tags: "design",
           }
-        // Continue adicionando objetos para cada banner
+        //objetos para cada banner
       ];
-  
-      const cardsPerPage = 9;
-      let currentPage = 1;
-  
-      function generateCards(startIndex, endIndex) {
-          const container = document.getElementById("bannerContainer");
-          container.innerHTML = ""; // Limpa o conteúdo atual
-  
-          for (let i = startIndex; i < endIndex; i++) {
-              const banner = data[i];
-              if (banner) {
-                  const card = createCard(banner);
-                  container.appendChild(card);
-              }
-          }
-      }
-  
-      function createCard(banner) {
-          const card = document.createElement("div");
-          card.classList.add("col-md-4", "mb-4", "banner-card");
-          card.innerHTML = `
-            <div class="card" data-tags="${banner.tags}">
-              <img src="${banner.imageUrl}" class="card-img-top" alt="${banner.altText}" loading="lazy">
-              <div class="card-body">
-                <h5 class="card-title">${banner.title}</h5>
-                <p class="card-text">${banner.description}</p>
-                <button class="btn btn-primary download-btn" data-image="${banner.imageFileName}">Download</button>
-              </div>
-            </div>
-          `;
-          return card;
-      }
-  
-      function updatePagination() {
-          const totalPages = Math.ceil(data.length / cardsPerPage);
-          const paginationContainer = document.getElementById("paginationContainer");
-          paginationContainer.innerHTML = "";
-  
-          const maxButtonsToShow = 3;
-          const startButton = Math.max(1, currentPage - Math.floor(maxButtonsToShow / 2));
-          const endButton = Math.min(totalPages, startButton + maxButtonsToShow - 1);
-  
-          for (let i = startButton; i <= endButton; i++) {
-              const pageButton = document.createElement("button");
-              pageButton.textContent = i;
-              pageButton.classList.add("btn", "btn-secondary", "mx-1");
-              pageButton.addEventListener("click", function () {
-                  currentPage = i;
-                  updatePage();
-                  
-              });
-  
-              paginationContainer.appendChild(pageButton);
-          }
-      }
-  
-      function updatePage() {
-          const startIndex = (currentPage - 1) * cardsPerPage;
-          const endIndex = startIndex + cardsPerPage;
-          generateCards(startIndex, endIndex);
-          updatePagination();
-  
-          // Reatribui os eventos de clique nos botões de download
-          assignDownloadButtonEvents();
-      }
-  
-      function assignDownloadButtonEvents() {
-        const downloadButtons = document.querySelectorAll(".download-btn");
 
-        downloadButtons.forEach((button) => {
-            button.addEventListener("click", function () {
-                const imageNumber = button.dataset.image;
+    const cardsPerPage = 9;
+    let currentPage = 1;
+
+    function generateCards(startIndex, endIndex) {
+        const container = $("#bannerContainer");
+        container.empty(); // Limpa o conteúdo atual
+
+        for (let i = startIndex; i < endIndex; i++) {
+            const banner = data[i];
+            if (banner) {
+                const card = createCard(banner);
+                container.append(card);
+            }
+        }
+    }
+
+    function createCard(banner) {
+        const card = $("<div>").addClass("col-md-4 mb-4 banner-card");
+        card.html(`
+            <div class="card" data-tags="${banner.tags}">
+                <img src="${banner.imageUrl}" class="card-img-top" alt="${banner.altText}" loading="lazy">
+                <div class="card-body">
+                    <h5 class="card-title">${banner.title}</h5>
+                    <p class="card-text">${banner.description}</p>
+                    <button class="btn download-btn" data-image="${banner.imageFileName}">Download</button>
+                </div>
+            </div>
+        `);
+        return card;
+    }
+
+    function updatePagination() {
+        const totalPages = Math.ceil(data.length / cardsPerPage);
+        const paginationContainer = $("#paginationContainer");
+        paginationContainer.empty();
+
+        const maxButtonsToShow = 3;
+        const startButton = Math.max(1, currentPage - Math.floor(maxButtonsToShow / 2));
+        const endButton = Math.min(totalPages, startButton + maxButtonsToShow - 1);
+
+        for (let i = startButton; i <= endButton; i++) {
+            const pageButton = $("<button>").addClass("btn btn-secondary mx-1").text(i);
+            pageButton.click(function () {
+                currentPage = i;
+                updatePage();
+            });
+
+            paginationContainer.append(pageButton);
+        }
+    }
+
+    function updatePage() {
+        const startIndex = (currentPage - 1) * cardsPerPage;
+        const endIndex = startIndex + cardsPerPage;
+        generateCards(startIndex, endIndex);
+        updatePagination();
+
+        assignDownloadButtonEvents();
+    }
+
+    function assignDownloadButtonEvents() {
+        const downloadButtons = $(".download-btn");
+
+        downloadButtons.each(function () {
+            $(this).click(function () {
+                const imageNumber = $(this).data("image");
                 const imageFileName = `${imageNumber}`;
                 const imageUrl = `./source/images/${imageFileName}`;
 
-                
-                // Realiza o download da imagem
                 downloadImage(imageUrl, imageFileName);
-    
-                // Exibe o modal de sucesso
                 showSuccessModal(imageFileName);
-
             });
         });
     }
 
     function downloadImage(imageUrl, imageFileName) {
-        // Lógica para realizar o download da imagem
-        const link = document.createElement("a");
-        link.href = imageUrl;
-        link.download = imageFileName;
-        link.click();
+        const link = $("<a>").attr({ href: imageUrl, download: imageFileName });
+        link[0].click();
     }
 
     function showSuccessModal(cardTitle) {
-        // Obtém a referência ao modal
-        const successModal = new bootstrap.Modal(document.getElementById('successModal'));
+        const successModal = new bootstrap.Modal($("#successModal"));
 
-        // Atualiza o conteúdo do modal com a mensagem
-        const modalContent = document.getElementById('successModalContent');
-        modalContent.textContent = `Download concluído`;
+        const modalContent = $("#successModalContent");
+        modalContent.text(`Download concluído`);
 
-        // Exibe o modal
         successModal.show();
     }
 
