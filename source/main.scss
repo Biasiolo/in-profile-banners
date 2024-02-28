@@ -15,11 +15,8 @@ html {
         font-weight: 400;
         font-style: normal;
         color: #1e272e;
-
     }
 }
-
-// Arquivo: styles.scss
 
 header {
     background-color: #0a66c2; // Cor de fundo azul
@@ -72,12 +69,10 @@ header {
     border-radius: 12px;
     border: 1px solid rgb(209, 209, 209);
 
-
     h2 {
         font-size: 1.5rem;
         color: #1e272e;
     }
-
 }
 
 
@@ -85,8 +80,6 @@ header {
     max-width: 90vw;
     margin: 0 auto;
     justify-content: space-between;
-
-
 
     h3 {
         font-size: 1.3rem;
@@ -119,7 +112,6 @@ header {
         font-size: 1rem;
         border-radius: 12px;
 
-
         .card-body1 {
             font-size: 1.05rem;
             font-weight: 500;
@@ -131,7 +123,6 @@ header {
         font-family: cursive;
     }
 
-
     ul {
         li {
             list-style: none;
@@ -140,9 +131,6 @@ header {
         }
     }
 }
-
-
-
 
 #banners {
     background-color: rgb(255, 255, 255);
@@ -176,24 +164,20 @@ header {
         &:hover {
             background-color: #0a66c2;
             color: white;
-
         }
     }
 }
 
 .card22 {
-
     box-shadow: 0 0 10px rgba(30, 39, 46, 0.4);
 
     &:hover {
         transform: scale(1.02);
-
     }
 }
 
 .card-body {
     text-align: center;
-
 
     .card-title {
         border-bottom: 1px solid rgb(209, 209, 209);
@@ -206,8 +190,16 @@ header {
         font-weight: 500;
         margin-top: 0.5rem;
     }
+}
 
-
+footer {
+    background-color: white;
+    margin-top: 1rem;
+    border-top: 1px solid rgb(209, 209, 209);
+    a{
+        text-decoration: none;
+    }
+    
 }
 
 

@@ -45,7 +45,7 @@ $(document).ready(function () {
             imageUrl: "./source/images/6.png",
             altText: "Imagem 3",
             title: "Techs",
-            description: "Pixellers Studio",
+            description: "Biasiolo",
             imageFileName: "6.png",
             tags: "design",
           },

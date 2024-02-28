@@ -162,6 +162,15 @@ header nav ul li a:hover {
   margin-top: 0.5rem;
 }
 
+footer {
+  background-color: white;
+  margin-top: 1rem;
+  border-top: 1px solid rgb(209, 209, 209);
+}
+footer a {
+  text-decoration: none;
+}
+
 .modal-content {
   max-width: 20vw;
   margin: 0 auto;
