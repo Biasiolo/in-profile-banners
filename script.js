@@ -3,16 +3,16 @@ $(document).ready(function () {
         {
           imageUrl: "./source/images/1.png",
           altText: "Imagem 1",
-          title: "Card 1",
-          description: "Descrição do Card 1.",
+          title: "Here Comes the Night",
+          description: "Biasiolo",
           imageFileName: "1.png",
-          tags: "design natureza",
+          tags: "design",
         },
         {
           imageUrl: "./source/images/2.png",
           altText: "Imagem 2",
-          title: "Card 2",
-          description: "Descrição do Card 2.",
+          title: "Neural",
+          description: "Pixellers Studio",
           imageFileName: "2.png",
           tags: "design",
         },
@@ -20,144 +20,144 @@ $(document).ready(function () {
         {
           imageUrl: "./source/images/16.png",
           altText: "Imagem 3",
-          title: "Card 3",
-          description: "Descrição do Card 3.",
+          title: "Back-End Matrix",
+          description: "Biasiolo",
           imageFileName: "16.png",
           tags: "design",
         },
         {
             imageUrl: "./source/images/4.png",
             altText: "Imagem 3",
-            title: "Card 3",
-            description: "Descrição do Card 3.",
+            title: "Javascript",
+            description: "Biasiolo",
             imageFileName: "4.png",
             tags: "design",
           },
           {
             imageUrl: "./source/images/5.png",
             altText: "Imagem 3",
-            title: "Card 3",
-            description: "Descrição do Card 3.",
+            title: "Red Code",
+            description: "Pixellers Studio",
             imageFileName: "5.png",
             tags: "design",
           },
           {
             imageUrl: "./source/images/6.png",
             altText: "Imagem 3",
-            title: "Card 3",
-            description: "Descrição do Card 3.",
+            title: "Techs",
+            description: "Pixellers Studio",
             imageFileName: "6.png",
             tags: "design",
           },
           {
             imageUrl: "./source/images/7.png",
             altText: "Imagem 3",
-            title: "Card 3",
-            description: "Descrição do Card 3.",
+            title: "Saturated Desktop",
+            description: "Biasiolo",
             imageFileName: "7.png",
             tags: "design",
           },
           {
             imageUrl: "./source/images/8.png",
             altText: "Imagem 3",
-            title: "Card 3",
-            description: "Descrição do Card 3.",
+            title: "Water Fly",
+            description: "Pixellers Studio",
             imageFileName: "8.png",
             tags: "design",
           },
           {
             imageUrl: "./source/images/9.png",
             altText: "Imagem 3",
-            title: "Card 3",
-            description: "Descrição do Card 3.",
+            title: "Summer in the City",
+            description: "Loving Spoonfull",
             imageFileName: "9.png",
             tags: "design",
           },
           {
             imageUrl: "./source/images/10.png",
             altText: "Imagem 3",
-            title: "Card 3",
-            description: "Descrição do Card 3.",
+            title: "The Black Hole",
+            description: "Biasiolo",
             imageFileName: "10.png",
             tags: "design",
           },
           {
             imageUrl: "./source/images/11.png",
             altText: "Imagem 3",
-            title: "Card 3",
-            description: "Descrição do Card 3.",
+            title: "Maggie May",
+            description: "R. Stewart",
             imageFileName: "11.png",
             tags: "design",
           },
           {
             imageUrl: "./source/images/12.png",
             altText: "Imagem 3",
-            title: "Card 3",
-            description: "Descrição do Card 3.",
+            title: "Yellow Brick",
+            description: "Elton",
             imageFileName: "12.png",
             tags: "design",
           },
           {
             imageUrl: "./source/images/13.png",
             altText: "Imagem 3",
-            title: "Card 3",
-            description: "Descrição do Card 3.",
+            title: "Flash",
+            description: "Biasiolo",
             imageFileName: "13.png",
             tags: "design",
           },
           {
             imageUrl: "./source/images/14.png",
             altText: "Imagem 3",
-            title: "Card 3",
-            description: "Descrição do Card 3.",
+            title: "Upstairs",
+            description: "Pixellers Studio",
             imageFileName: "14.png",
             tags: "design",
           },
           {
             imageUrl: "./source/images/15.png",
             altText: "Imagem 3",
-            title: "Card 3",
-            description: "Descrição do Card 3.",
+            title: "Green Storm",
+            description: "Pixellers Studio",
             imageFileName: "15.png",
             tags: "design",
           },
           {
             imageUrl: "./source/images/3.png",
             altText: "Imagem 3",
-            title: "Card 3",
-            description: "Descrição do Card 3.",
+            title: "Sunday Morning",
+            description: "L. Reed",
             imageFileName: "3.png",
             tags: "design",
           },
           {
             imageUrl: "./source/images/17.png",
             altText: "Imagem 3",
-            title: "Card 3",
-            description: "Descrição do Card 3.",
+            title: "Cantarola",
+            description: "Pixellers Studio",
             imageFileName: "17.png",
             tags: "design",
           },
           {
             imageUrl: "./source/images/18.png",
             altText: "Imagem 3",
-            title: "Card 3",
-            description: "Descrição do Card 3.",
+            title: "Centurion",
+            description: "Biasiolo",
             imageFileName: "18.png",
             tags: "design",
           },
           {
             imageUrl: "./source/images/19.png",
             altText: "Imagem 3",
-            title: "Card 3",
-            description: "Descrição do Card 3.",
+            title: "Bright Birds",
+            description: "Biasiolo",
             imageFileName: "19.png",
             tags: "design",
           },
           {
             imageUrl: "./source/images/20.png",
             altText: "Imagem 3",
-            title: "Card 3",
-            description: "Descrição do Card 3.",
+            title: "Transform",
+            description: "Biasiolo",
             imageFileName: "20.png",
             tags: "design",
           }
@@ -183,11 +183,11 @@ $(document).ready(function () {
     function createCard(banner) {
         const card = $("<div>").addClass("col-md-4 mb-4 banner-card");
         card.html(`
-            <div class="card" data-tags="${banner.tags}">
+            <div class="card card22" data-tags="${banner.tags}">
                 <img src="${banner.imageUrl}" class="card-img-top" alt="${banner.altText}" loading="lazy">
                 <div class="card-body">
                     <h5 class="card-title">${banner.title}</h5>
-                    <p class="card-text">${banner.description}</p>
+                    <p class="card-text"><i class="bi bi-person-fill-up"></i> ${banner.description}</p>
                     <button class="btn download-btn" data-image="${banner.imageFileName}">Download</button>
                 </div>
             </div>
@@ -205,7 +205,7 @@ $(document).ready(function () {
         const endButton = Math.min(totalPages, startButton + maxButtonsToShow - 1);
 
         for (let i = startButton; i <= endButton; i++) {
-            const pageButton = $("<button>").addClass("btn btn-secondary mx-1").text(i);
+            const pageButton = $("<button>").addClass("btn btn-primary mx-1 fw-3").text(i);
             pageButton.click(function () {
                 currentPage = i;
                 updatePage();

@@ -59,7 +59,7 @@ header nav ul li a:hover {
   border: 1px solid rgb(209, 209, 209);
 }
 #sobre h2 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: #1e272e;
 }
 
@@ -78,6 +78,16 @@ header nav ul li a:hover {
 }
 #dicas .logo3 {
   max-width: 50px;
+  transition: transform 1.5s ease;
+}
+#dicas .logo3:hover {
+  transform: rotatey(360deg);
+}
+#dicas .download {
+  transition: transform 2s ease;
+}
+#dicas .download:hover {
+  transform: rotatex(360deg);
 }
 #dicas .card {
   height: 100%;
@@ -101,27 +111,55 @@ header nav ul li a:hover {
 #banners {
   background-color: rgb(255, 255, 255);
   padding: 0.5rem;
+  padding-top: 0;
   max-width: 90vw;
   margin: 0 auto;
-  margin-top: 12px;
+  margin-top: 8px;
   border-radius: 12px;
   border: 1px solid rgb(209, 209, 209);
+}
+#banners h3 {
+  font-size: 1.5rem;
+  background-color: #0a66c2;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  padding: 8px;
+  color: white;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 #banners .download-btn {
   border-radius: 30px;
   padding: 5px 20px;
-  background-color: transparent;
+  background-color: #dcedff;
   color: #0a66c2;
   border: 2px solid #0a66c2;
   font-weight: 600;
 }
 #banners .download-btn:hover {
-  background-color: #70b5f9;
+  background-color: #0a66c2;
   color: white;
+}
+
+.card22 {
+  box-shadow: 0 0 10px rgba(30, 39, 46, 0.4);
+}
+.card22:hover {
+  transform: scale(1.02);
 }
 
 .card-body {
   text-align: center;
+}
+.card-body .card-title {
+  border-bottom: 1px solid rgb(209, 209, 209);
+  font-weight: 600;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+}
+.card-body .card-text {
+  font-weight: 500;
+  margin-top: 0.5rem;
 }
 
 .modal-content {

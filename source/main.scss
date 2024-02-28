@@ -74,9 +74,8 @@ header {
     
 
     h2 {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         color: #1e272e;
-        
     }
 
 }
@@ -100,19 +99,32 @@ header {
 
     .logo3 {
         max-width: 50px;
+        transition: transform 1.5s ease;
+
+        &:hover {
+            transform: rotatey(360deg);
+        }
+    }
+
+    .download {
+        transition: transform 2s ease;
+
+        &:hover {
+            transform: rotatex(360deg);
+        }
     }
 
     .card {
         height: 100%;
         font-size: 1rem;
         border-radius: 12px;
+        
 
         .card-body1 {
             font-size: 1.05rem;
             font-weight: 500;
+            
         }
-        
-        
     }
 
     
@@ -139,30 +151,63 @@ header {
 #banners {
     background-color: rgb(255, 255, 255);
     padding: 0.5rem;
+    padding-top: 0;
     max-width: 90vw;
     margin: 0 auto;
-    margin-top: 12px;
+    margin-top: 8px;
     border-radius: 12px;
     border: 1px solid rgb(209, 209, 209);
+
+    h3 {
+        font-size: 1.5rem;
+        background-color: #0a66c2;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        padding: 8px;
+        color: white;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
 
     .download-btn {
         border-radius: 30px;
         padding: 5px 20px;
-        background-color: transparent;
+        background-color: #dcedff;
         color:#0a66c2;
         border: 2px solid #0a66c2;
         font-weight: 600;
 
         &:hover {
-            background-color: #70b5f9;
+            background-color: #0a66c2;
             color: white;
   
         }
     }
 }
 
+.card22 {
+
+    box-shadow: 0 0 10px rgba(30, 39, 46, 0.4);
+    &:hover {
+        transform: scale(1.02);
+
+    }
+}
 .card-body {
     text-align: center;
+    
+
+    .card-title {
+        border-bottom: 1px solid rgb(209, 209, 209);
+        font-weight: 600;
+        font-size: 1.3rem;
+        padding: 0.5rem;
+    }
+
+    .card-text {
+        font-weight: 500;
+        margin-top: 0.5rem;
+    }
 
 
 }
