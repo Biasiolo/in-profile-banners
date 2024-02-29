@@ -4,7 +4,7 @@ $(document).ready(function () {
           imageUrl: "./source/images/1.png",
           altText: "Imagem 1",
           title: "Here Comes the Night",
-          description: "Biasiolo",
+          description: "Pixellers Studio",
           imageFileName: "1.png",
           tags: "design",
         },
