@@ -17,11 +17,27 @@ $(document).ready(function () {
           tags: "design",
         },
         {
+          imageUrl: "./source/images/24.png",
+          altText: "Imagem 3",
+          title: "Wave",
+          description: "Biasiolo",
+          imageFileName: "24.png",
+          tags: "design",
+        },
+        {
             imageUrl: "./source/images/4.png",
             altText: "Imagem 3",
             title: "Javascript",
             description: "Biasiolo",
             imageFileName: "4.png",
+            tags: "design",
+          },
+          {
+            imageUrl: "./source/images/19.png",
+            altText: "Imagem 3",
+            title: "Bright Birds",
+            description: "Biasiolo",
+            imageFileName: "19.png",
             tags: "design",
           },
           {
@@ -145,14 +161,6 @@ $(document).ready(function () {
             tags: "design",
           },
           {
-            imageUrl: "./source/images/19.png",
-            altText: "Imagem 3",
-            title: "Bright Birds",
-            description: "Biasiolo",
-            imageFileName: "19.png",
-            tags: "design",
-          },
-          {
             imageUrl: "./source/images/20.png",
             altText: "Imagem 3",
             title: "Transform",
@@ -182,14 +190,6 @@ $(document).ready(function () {
             title: "Life is Good",
             description: "Pixellers Studio",
             imageFileName: "23.png",
-            tags: "design",
-          },
-          {
-            imageUrl: "./source/images/24.png",
-            altText: "Imagem 3",
-            title: "Wave",
-            description: "Biasiolo",
-            imageFileName: "24.png",
             tags: "design",
           },
           {
