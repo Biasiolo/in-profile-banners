@@ -233,7 +233,7 @@ $(document).ready(function () {
             <div class="card card22" data-tags="${banner.tags}">
                 <img src="${banner.imageUrl}" class="card-img-top" alt="${banner.altText}" loading="lazy">
                 <div class="card-body">
-                    <h5 class="card-title">${banner.title}</h5>
+                    <h4 class="card-title">${banner.title}</h4>
                     <p class="card-text"><i class="bi bi-person-fill-up"></i> ${banner.description}</p>
                     <button class="btn download-btn" data-image="${banner.imageFileName}">Download</button>
                 </div>
