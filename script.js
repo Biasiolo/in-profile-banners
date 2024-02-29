@@ -9,15 +9,6 @@ $(document).ready(function () {
           tags: "design",
         },
         {
-          imageUrl: "./source/images/2.png",
-          altText: "Imagem 2",
-          title: "Neural",
-          description: "Pixellers Studio",
-          imageFileName: "2.png",
-          tags: "design",
-        },
-        // Adicione mais objetos conforme necessário
-        {
           imageUrl: "./source/images/16.png",
           altText: "Imagem 3",
           title: "Back-End Matrix",
@@ -79,6 +70,14 @@ $(document).ready(function () {
             title: "The Black Hole",
             description: "Biasiolo",
             imageFileName: "10.png",
+            tags: "design",
+          },
+          {
+            imageUrl: "./source/images/2.png",
+            altText: "Imagem 2",
+            title: "Neural",
+            description: "Pixellers Studio",
+            imageFileName: "2.png",
             tags: "design",
           },
           {
