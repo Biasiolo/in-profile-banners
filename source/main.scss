@@ -173,15 +173,22 @@ header {
 }
 
 footer {
-    padding: 0.2rem;
+    padding: 0.1rem;
     bottom: 0;
     width: 100%;
     background-color: white;
     margin-top: 1rem;
     border-top: 1px solid rgb(209, 209, 209);
+    color:#0a66c2;
+    font-weight: 400;
+    font-size: 0.8rem;
+    align-items: center;
 
     a {
         text-decoration: none;
+    }
+    img {
+        max-width: 20px;
     }
 }
 
