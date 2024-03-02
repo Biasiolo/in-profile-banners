@@ -1,7 +1,7 @@
 $(document).ready(function () {
   const data = [
     {
-      imageUrl: "./source/images/30.png",
+      imageUrl: "./viewer/source/images/30.png",
       altText: "Imagem 3",
       title: "B&W",
       description: "Biasiolo",
@@ -9,7 +9,7 @@ $(document).ready(function () {
       tags: "design",
     },
     {
-      imageUrl: "./source/images/16.png",
+      imageUrl: "./viewer/source/images/16.png",
       altText: "Imagem 3",
       title: "Back-End Matrix",
       description: "Pixellers Studio",
@@ -17,7 +17,7 @@ $(document).ready(function () {
       tags: "design",
     },
     {
-      imageUrl: "./source/images/24.png",
+      imageUrl: "./viewer/source/images/24.png",
       altText: "Imagem 3",
       title: "Wave",
       description: "Biasiolo",
@@ -25,7 +25,7 @@ $(document).ready(function () {
       tags: "design",
     },
     {
-      imageUrl: "./source/images/4.png",
+      imageUrl: "./viewer/source/images/4.png",
       altText: "Imagem 3",
       title: "Javascript",
       description: "Biasiolo",
@@ -33,7 +33,7 @@ $(document).ready(function () {
       tags: "design",
     },
     {
-      imageUrl: "./source/images/27.png",
+      imageUrl: "./viewer/source/images/27.png",
       altText: "Imagem 3",
       title: "Faith",
       description: "Pixellers Studio",
@@ -41,7 +41,7 @@ $(document).ready(function () {
       tags: "design",
     },
     {
-      imageUrl: "./source/images/19.png",
+      imageUrl: "./viewer/source/images/19.png",
       altText: "Imagem 3",
       title: "Bright Birds",
       description: "Biasiolo",
@@ -49,7 +49,7 @@ $(document).ready(function () {
       tags: "design",
     },
     {
-      imageUrl: "./source/images/5.png",
+      imageUrl: "./viewer/source/images/5.png",
       altText: "Imagem 3",
       title: "Red Code",
       description: "Pixellers Studio",
@@ -57,7 +57,7 @@ $(document).ready(function () {
       tags: "design",
     },
     {
-      imageUrl: "./source/images/28.png",
+      imageUrl: "./viewer/source/images/28.png",
       altText: "Imagem 3",
       title: "Open to Work",
       description: "Biasiolo",
@@ -65,7 +65,7 @@ $(document).ready(function () {
       tags: "design",
     },
     {
-      imageUrl: "./source/images/1.png",
+      imageUrl: "./viewer/source/images/1.png",
       altText: "Imagem 1",
       title: "Here Comes the Night",
       description: "Pixellers Studio",
@@ -73,7 +73,7 @@ $(document).ready(function () {
       tags: "design",
     },
     {
-      imageUrl: "./source/images/6.png",
+      imageUrl: "./viewer/source/images/6.png",
       altText: "Imagem 3",
       title: "Techs",
       description: "Biasiolo",
@@ -81,7 +81,7 @@ $(document).ready(function () {
       tags: "design",
     },
     {
-      imageUrl: "./source/images/7.png",
+      imageUrl: "./viewer/source/images/7.png",
       altText: "Imagem 3",
       title: "Saturated Desktop",
       description: "Biasiolo",
@@ -89,7 +89,7 @@ $(document).ready(function () {
       tags: "design",
     },
     {
-      imageUrl: "./source/images/8.png",
+      imageUrl: "./viewer/source/images/8.png",
       altText: "Imagem 3",
       title: "Water Fly",
       description: "Pixellers Studio",
@@ -97,7 +97,7 @@ $(document).ready(function () {
       tags: "design",
     },
     {
-      imageUrl: "./source/images/9.png",
+      imageUrl: "./viewer/source/images/9.png",
       altText: "Imagem 3",
       title: "Summer in the City",
       description: "Loving Spoonfull",
@@ -105,7 +105,7 @@ $(document).ready(function () {
       tags: "design",
     },
     {
-      imageUrl: "./source/images/10.png",
+      imageUrl: "./viewer/source/images/10.png",
       altText: "Imagem 3",
       title: "The Black Hole",
       description: "Biasiolo",
@@ -113,7 +113,7 @@ $(document).ready(function () {
       tags: "design",
     },
     {
-      imageUrl: "./source/images/2.png",
+      imageUrl: "./viewer/source/images/2.png",
       altText: "Imagem 2",
       title: "Neural",
       description: "Pixellers Studio",
@@ -121,7 +121,7 @@ $(document).ready(function () {
       tags: "design",
     },
     {
-      imageUrl: "./source/images/11.png",
+      imageUrl: "./viewer/source/images/11.png",
       altText: "Imagem 3",
       title: "Maggie May",
       description: "R. Stewart",
@@ -129,7 +129,7 @@ $(document).ready(function () {
       tags: "design",
     },
     {
-      imageUrl: "./source/images/12.png",
+      imageUrl: "./viewer/source/images/12.png",
       altText: "Imagem 3",
       title: "Yellow Brick",
       description: "Elton",
@@ -137,7 +137,7 @@ $(document).ready(function () {
       tags: "design",
     },
     {
-      imageUrl: "./source/images/13.png",
+      imageUrl: "./viewer/source/images/13.png",
       altText: "Imagem 3",
       title: "Flash",
       description: "Biasiolo",
@@ -145,7 +145,7 @@ $(document).ready(function () {
       tags: "design",
     },
     {
-      imageUrl: "./source/images/14.png",
+      imageUrl: "./viewer/source/images/14.png",
       altText: "Imagem 3",
       title: "Upstairs",
       description: "Pixellers Studio",
@@ -153,7 +153,7 @@ $(document).ready(function () {
       tags: "design",
     },
     {
-      imageUrl: "./source/images/15.png",
+      imageUrl: "./viewer/source/images/15.png",
       altText: "Imagem 3",
       title: "Green Storm",
       description: "Pixellers Studio",
@@ -161,7 +161,7 @@ $(document).ready(function () {
       tags: "design",
     },
     {
-      imageUrl: "./source/images/3.png",
+      imageUrl: "./viewer/source/images/3.png",
       altText: "Imagem 3",
       title: "Sunday Morning",
       description: "L. Reed",
@@ -169,7 +169,7 @@ $(document).ready(function () {
       tags: "design",
     },
     {
-      imageUrl: "./source/images/17.png",
+      imageUrl: "./viewer/source/images/17.png",
       altText: "Imagem 3",
       title: "Cantarola",
       description: "Pixellers Studio",
@@ -177,7 +177,7 @@ $(document).ready(function () {
       tags: "design",
     },
     {
-      imageUrl: "./source/images/18.png",
+      imageUrl: "./viewer/source/images/18.png",
       altText: "Imagem 3",
       title: "Centurion",
       description: "Biasiolo",
@@ -185,7 +185,7 @@ $(document).ready(function () {
       tags: "design",
     },
     {
-      imageUrl: "./source/images/20.png",
+      imageUrl: "./viewer/source/images/20.png",
       altText: "Imagem 3",
       title: "Transform",
       description: "Biasiolo",
@@ -193,7 +193,7 @@ $(document).ready(function () {
       tags: "design",
     },
     {
-      imageUrl: "./source/images/21.png",
+      imageUrl: "./viewer/source/images/21.png",
       altText: "Imagem 3",
       title: "World",
       description: "Pixellers Studio",
@@ -201,7 +201,7 @@ $(document).ready(function () {
       tags: "design",
     },
     {
-      imageUrl: "./source/images/22.png",
+      imageUrl: "./viewer/source/images/22.png",
       altText: "Imagem 3",
       title: "A Cidade",
       description: "Biasiolo",
@@ -209,7 +209,7 @@ $(document).ready(function () {
       tags: "design",
     },
     {
-      imageUrl: "./source/images/23.png",
+      imageUrl: "./viewer/source/images/23.png",
       altText: "Imagem 3",
       title: "Life is Good",
       description: "Pixellers Studio",
@@ -217,7 +217,7 @@ $(document).ready(function () {
       tags: "design",
     },
     {
-      imageUrl: "./source/images/25.png",
+      imageUrl: "./viewer/source/images/25.png",
       altText: "Imagem 3",
       title: "Optical",
       description: "Biasiolo",
@@ -225,7 +225,7 @@ $(document).ready(function () {
       tags: "design",
     },
     {
-      imageUrl: "./source/images/26.png",
+      imageUrl: "./viewer/source/images/26.png",
       altText: "Imagem 3",
       title: "Hieróglifo",
       description: "Pixellers Studio",
@@ -233,7 +233,7 @@ $(document).ready(function () {
       tags: "design",
     },
     {
-      imageUrl: "./source/images/29.png",
+      imageUrl: "./viewer/source/images/29.png",
       altText: "Imagem 3",
       title: "On Space",
       description: "Biasiolo",
@@ -318,7 +318,7 @@ $(document).ready(function () {
       $(this).click(function () {
         const imageNumber = $(this).data("image");
         const imageFileName = `${imageNumber}`;
-        const imageUrl = `./source/images/${imageFileName}`;
+        const imageUrl = `./viewer/source/images/${imageFileName}`;
 
         downloadImage(imageUrl, imageFileName);
         showSuccessModal(imageFileName);
