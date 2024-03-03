@@ -1,3 +1,10 @@
+$corFundo: #f4f2ee;
+$corBranco: white;
+$CorAzul: #0a66c2;
+$corTexto: #1e272e;
+$borda: 1px solid rgb(209, 209, 209);
+
+
 * {
     margin: 0;
     padding: 0;
@@ -7,24 +14,24 @@
 
 html {
     body {
-        background-color: #f4f2ee;
+        background-color: $corFundo ;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
         font-family: "Roboto", sans-serif;
         font-weight: 400;
         font-style: normal;
-        color: #1e272e;
+        color: $corTexto;
     }
 }
 
 header {
-    background-color: #0a66c2; 
+    background-color: $CorAzul; 
     color: white; 
     text-align: center;
     padding: 1.5rem 0; 
     margin-bottom: 12px;
-    border: 1px solid rgb(209, 209, 209);
+    border: $borda;
 
     h1 {
         margin-bottom: 1rem; 
@@ -41,17 +48,17 @@ header {
 }
 
 #sobre {
-    background-color: rgb(255, 255, 255);
+    background-color: $corBranco;
     padding: 0.5rem;
     max-width: 90vw;
     margin: 0 auto;
     margin-bottom: 12px;
     border-radius: 12px;
-    border: 1px solid rgb(209, 209, 209);
+    border: $borda;
 
     h2 {
         font-size: 1.5rem;
-        color: #1e272e;
+        color: $corTexto;
     }
 }
 
@@ -63,7 +70,7 @@ header {
 
     h3 {
         font-size: 1.3rem;
-        background-color: #0a66c2;
+        background-color: $CorAzul;
         border-top-left-radius: 12px;
         border-top-right-radius: 12px;
         padding: 8px;
@@ -113,18 +120,18 @@ header {
 }
 
 #banners {
-    background-color: rgb(255, 255, 255);
+    background-color: $corBranco;
     padding: 0.5rem;
     padding-top: 0;
     max-width: 90vw;
     margin: 0 auto;
     margin-top: 8px;
     border-radius: 12px;
-    border: 1px solid rgb(209, 209, 209);
+    border: $borda;
 
     h3 {
         font-size: 1.5rem;
-        background-color: #0a66c2;
+        background-color: $CorAzul;
         border-top-left-radius: 12px;
         border-top-right-radius: 12px;
         padding: 8px;
@@ -137,7 +144,7 @@ header {
         border-radius: 30px;
         padding: 5px 20px;
         background-color: #dcedff;
-        color: #0a66c2;
+        color: $CorAzul;
         border: 2px solid #0a66c2;
         font-weight: 600;
 
@@ -160,7 +167,7 @@ header {
     text-align: center;
 
     .card-title {
-        border-bottom: 1px solid rgb(209, 209, 209);
+        border-bottom: $borda;
         font-weight: 600;
         font-size: 1.3rem;
         padding: 0.5rem;

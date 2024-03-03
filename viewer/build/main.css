@@ -36,7 +36,7 @@ header .logo:hover {
 }
 
 #sobre {
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   padding: 0.5rem;
   max-width: 90vw;
   margin: 0 auto;
@@ -95,7 +95,7 @@ header .logo:hover {
 }
 
 #banners {
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   padding: 0.5rem;
   padding-top: 0;
   max-width: 90vw;
