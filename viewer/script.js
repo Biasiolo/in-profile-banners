@@ -33,6 +33,14 @@ $(document).ready(function () {
       tags: "design",
     },
     {
+      imageUrl: "./viewer/source/images/31.png",
+      altText: "Imagem 3",
+      title: "Design",
+      description: "Biasiolo",
+      imageFileName: "31.png",
+      tags: "design",
+    },
+    {
       imageUrl: "./viewer/source/images/27.png",
       altText: "Imagem 3",
       title: "Faith",
@@ -62,14 +70,6 @@ $(document).ready(function () {
       title: "Open to Work",
       description: "Biasiolo",
       imageFileName: "28.png",
-      tags: "design",
-    },
-    {
-      imageUrl: "./viewer/source/images/31.png",
-      altText: "Imagem 3",
-      title: "Design",
-      description: "Biasiolo",
-      imageFileName: "31.png",
       tags: "design",
     },
     {
