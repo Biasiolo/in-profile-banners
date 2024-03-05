@@ -65,6 +65,14 @@ $(document).ready(function () {
       tags: "design",
     },
     {
+      imageUrl: "./viewer/source/images/31.png",
+      altText: "Imagem 3",
+      title: "Design",
+      description: "Biasiolo",
+      imageFileName: "31.png",
+      tags: "design",
+    },
+    {
       imageUrl: "./viewer/source/images/1.png",
       altText: "Imagem 1",
       title: "Here Comes the Night",
@@ -238,14 +246,6 @@ $(document).ready(function () {
       title: "On Space",
       description: "Biasiolo",
       imageFileName: "29.png",
-      tags: "design",
-    },
-    {
-      imageUrl: "./viewer/source/images/31.png",
-      altText: "Imagem 3",
-      title: "Design",
-      description: "Biasiolo",
-      imageFileName: "31.png",
       tags: "design",
     },
     {
