@@ -239,7 +239,39 @@ $(document).ready(function () {
       description: "Biasiolo",
       imageFileName: "29.png",
       tags: "design",
-    }
+    },
+    {
+      imageUrl: "./viewer/source/images/31.png",
+      altText: "Imagem 3",
+      title: "Design",
+      description: "Biasiolo",
+      imageFileName: "31.png",
+      tags: "design",
+    },
+    {
+      imageUrl: "./viewer/source/images/32.png",
+      altText: "Imagem 3",
+      title: "O",
+      description: "Pixellers Studio",
+      imageFileName: "32.png",
+      tags: "design",
+    },
+    {
+      imageUrl: "./viewer/source/images/33.png",
+      altText: "Imagem 3",
+      title: "Party On",
+      description: "Biasiolo",
+      imageFileName: "33.png",
+      tags: "design",
+    },
+    {
+      imageUrl: "./viewer/source/images/34.png",
+      altText: "Imagem 3",
+      title: "Palm Trees",
+      description: "Biasiolo",
+      imageFileName: "34.png",
+      tags: "design",
+    },
 
     //objetos para cada banner
   ];
