@@ -1,12 +1,12 @@
 const data = [
     {
-      imageUrl: "./viewer/source/images/30.png",
-      altText: "Banner B&W",
-      title: "B&W",
-      description: "Biasiolo",
-      imageFileName: "30.png",
-      tags: "design",
-    },
+        imageUrl: "./viewer/source/images/36.png",
+        altText: "Banner Ice Cube",
+        title: "Ice Cube",
+        description: "Biasiolo",
+        imageFileName: "36.png",
+        tags: "design",
+      },
     {
       imageUrl: "./viewer/source/images/16.png",
       altText: "Banner Back-End Matrix",
@@ -48,19 +48,19 @@ const data = [
       tags: "design",
     },
     {
+        imageUrl: "./viewer/source/images/30.png",
+        altText: "Banner B&W",
+        title: "B&W",
+        description: "Biasiolo",
+        imageFileName: "30.png",
+        tags: "design",
+      },
+    {
       imageUrl: "./viewer/source/images/19.png",
       altText: "Banner Bright Birds",
       title: "Bright Birds",
       description: "Biasiolo",
       imageFileName: "19.png",
-      tags: "design",
-    },
-    {
-      imageUrl: "./viewer/source/images/5.png",
-      altText: "Banner Coding",
-      title: "Coding",
-      description: "Pixellers Studio",
-      imageFileName: "5.png",
       tags: "design",
     },
     {
@@ -79,6 +79,14 @@ const data = [
       imageFileName: "1.png",
       tags: "design",
     },
+    {
+        imageUrl: "./viewer/source/images/5.png",
+        altText: "Banner Coding",
+        title: "Coding",
+        description: "Pixellers Studio",
+        imageFileName: "5.png",
+        tags: "design",
+      },
     {
       imageUrl: "./viewer/source/images/6.png",
       altText: "Banner Techs",
@@ -271,6 +279,22 @@ const data = [
       imageFileName: "34.png",
       tags: "design",
     },
+    {
+      imageUrl: "./viewer/source/images/35.png",
+      altText: "Banner x",
+      title: "X",
+      description: "Biasiolo",
+      imageFileName: "35.png",
+      tags: "design",
+    },
+      {
+        imageUrl: "./viewer/source/images/37.png",
+        altText: "Banner ETH",
+        title: "ETH",
+        description: "Pixellers Studio",
+        imageFileName: "37.png",
+        tags: "design",
+      }
 
     //objetos para cada banner
   ];
