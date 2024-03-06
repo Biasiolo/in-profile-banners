@@ -40,21 +40,41 @@ function updatePagination() {
   const startButton = Math.max(1, currentPage - Math.floor(maxButtonsToShow / 2));
   const endButton = Math.min(totalPages, startButton + maxButtonsToShow - 1);
 
+  // Adiciona botão "Anterior"
+  const prevButton = $("<button>").addClass("btn btn-primary mx-1 fw-3").text("Anterior");
+  prevButton.prop("disabled", currentPage === 1);
+  prevButton.click(function () {
+    if (currentPage > 1) {
+      currentPage--;
+      updatePage();
+      scrollToTop();
+    }
+  });
+  paginationContainer.append(prevButton);
+
+  // Adiciona botões numéricos
   for (let i = startButton; i <= endButton; i++) {
     const pageButton = $("<button>").addClass("btn btn-primary mx-1 fw-3").text(i);
+    pageButton.prop("disabled", i === currentPage);
     pageButton.click(function () {
       currentPage = i;
       updatePage();
       scrollToTop();
     });
-
     paginationContainer.append(pageButton);
   }
-}
 
-function scrollToTop() {
-  const bannersSectionTop = $("#banners").offset().top;
-  $("html, body").animate({ scrollTop: bannersSectionTop });
+  // Adiciona botão "Próximo"
+  const nextButton = $("<button>").addClass("btn btn-primary mx-1 fw-3").text("Próximo");
+  nextButton.prop("disabled", currentPage === totalPages);
+  nextButton.click(function () {
+    if (currentPage < totalPages) {
+      currentPage++;
+      updatePage();
+      scrollToTop();
+    }
+  });
+  paginationContainer.append(nextButton);
 }
 
 function updatePage() {
