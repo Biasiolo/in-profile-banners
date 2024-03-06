@@ -77,6 +77,11 @@ function updatePagination() {
   paginationContainer.append(nextButton);
 }
 
+function scrollToTop() {
+  const bannersSectionTop = $("#banners").offset().top;
+  $("html, body").animate({ scrollTop: bannersSectionTop });
+}
+
 function updatePage() {
   const startIndex = (currentPage - 1) * cardsPerPage;
   const endIndex = startIndex + cardsPerPage;
