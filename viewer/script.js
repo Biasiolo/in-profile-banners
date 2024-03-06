@@ -41,7 +41,7 @@ function updatePagination() {
   const endButton = Math.min(totalPages, startButton + maxButtonsToShow - 1);
 
   // Adiciona botão "Anterior"
-  const prevButton = $("<button>").addClass("btn btn-primary mx-1 fw-3").text("Anterior");
+  const prevButton = $("<button>").addClass("btn btn-primary mx-1 fw-3").text("←");
   prevButton.prop("disabled", currentPage === 1);
   prevButton.click(function () {
     if (currentPage > 1) {
@@ -65,7 +65,7 @@ function updatePagination() {
   }
 
   // Adiciona botão "Próximo"
-  const nextButton = $("<button>").addClass("btn btn-primary mx-1 fw-3").text("Próximo");
+  const nextButton = $("<button>").addClass("btn btn-primary mx-1 fw-3").text("→");
   nextButton.prop("disabled", currentPage === totalPages);
   nextButton.click(function () {
     if (currentPage < totalPages) {
