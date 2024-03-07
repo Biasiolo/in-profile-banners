@@ -1,3 +1,4 @@
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 import java.sql.SQLException;
@@ -18,16 +19,16 @@ public class ProgramTest {
 		imageDao = new ImageDao();
 	}
 
+	@Test
 	public void testByOrder() throws SQLException {
 		createTest();
-	//	readTest();
+		readTest();
 		listAllTest();
 		updateTeste();
 		deleteTest();
 
 	}
 
-	@Test
 	public void createTest() throws SQLException {
 
 		image.setName("Imagem-LinkedIn");
@@ -37,27 +38,26 @@ public class ProgramTest {
 		assertNotNull(image);
 	}
 
-	@Test
 	public void readTest() throws SQLException {
+		image.setId(1);
 		Image returnedImage = imageDao.read(image.getId());
+		assertNotNull(returnedImage);
+		assertEquals("Imagem-LinkedIn", returnedImage.getName());
+
 	}
 
-	@Test
 	public void listAllTest() {
 
 	}
 
-	@Test
 	public void updateTeste() throws SQLException {
 
 	}
 
-	@Test
 	public void deleteTest() throws SQLException {
 
 	}
 
-	@Test
 	public void deleteAllTest() throws SQLException {
 
 	}

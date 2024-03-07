@@ -10,7 +10,7 @@ import java.util.List;
 import domain.Image;
 
 public class ImageDao implements IImagemDao {
-	
+
 	Connection conn = null;
 	PreparedStatement stm = null;
 	ResultSet rs = null;
@@ -39,35 +39,54 @@ public class ImageDao implements IImagemDao {
 			stm.setInt(3, image.getQtdDownloads());
 			stm.executeUpdate();
 		} catch (Exception e) {
-			throw new SQLException(e.getMessage());
+			throw new SQLException("Erro ao cadastrar Imagem" + e.getMessage());
 		} finally {
 			closeInstancies();
 		}
 	}
 
 	@Override
-	public Image read(int id) {
+	public Image read(int id) throws SQLException {
+		Image image = null;
+		try {
+			conn = getConnection();
+			stm = conn.prepareStatement("SELECT * FROM TB_IMAGE WHERE ID = ?");
+			stm.setInt(1, id);
+			rs = stm.executeQuery();
+			if (rs.next()) {
+				image = new Image();
+				image.setId(rs.getInt("ID"));
+				image.setName(rs.getString("NAME"));
+				image.setDescription(rs.getString("DESCRIPTION"));
+				image.setQtdDownloads(rs.getInt("QTTDOWNLOAD"));
+			} else {
+				System.out.println("Nenhuma imagem encontrada para o ID: " + id);
+			}
+		} catch (Exception e) {
+			throw new SQLException("Erro ao buscar Imagem: " + e.getMessage());
+		} finally {
+			closeInstancies();
+		}
+		return image;
+	}
+
+	@Override
+	public List<Image> listAll() throws SQLException {
 
 		return null;
 	}
 
 	@Override
-	public List<Image> listAll() {
-
-		return null;
+	public void update() throws SQLException {
 	}
 
 	@Override
-	public void update() {
-	}
-
-	@Override
-	public void delete() {
+	public void delete() throws SQLException {
 
 	}
 
 	@Override
-	public void deleteAll() {
+	public void deleteAll() throws SQLException {
 
 	}
 
