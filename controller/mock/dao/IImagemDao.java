@@ -9,7 +9,7 @@ public interface IImagemDao {
 
 	public void create(Image image) throws SQLException;
 
-	public Image read();
+	public Image read(int id);
 
 	public List<Image> listAll();
 

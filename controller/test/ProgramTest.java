@@ -1,9 +1,7 @@
-import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNotNull;
 
 import java.sql.SQLException;
 
-import org.junit.Before;
 import org.junit.Test;
 
 import dao.IImagemDao;
@@ -22,7 +20,7 @@ public class ProgramTest {
 
 	public void testByOrder() throws SQLException {
 		createTest();
-		readTest();
+	//	readTest();
 		listAllTest();
 		updateTeste();
 		deleteTest();
@@ -32,7 +30,6 @@ public class ProgramTest {
 	@Test
 	public void createTest() throws SQLException {
 
-		image.setId(1);
 		image.setName("Imagem-LinkedIn");
 		image.setDescription("imagem fictícia");
 		image.setQtdDownloads(10);
@@ -42,7 +39,7 @@ public class ProgramTest {
 
 	@Test
 	public void readTest() throws SQLException {
-
+		Image returnedImage = imageDao.read(image.getId());
 	}
 
 	@Test

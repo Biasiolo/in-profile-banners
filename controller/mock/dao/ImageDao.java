@@ -10,15 +10,29 @@ import java.util.List;
 import domain.Image;
 
 public class ImageDao implements IImagemDao {
+	
+	Connection conn = null;
+	PreparedStatement stm = null;
+	ResultSet rs = null;
+
+	public void closeInstancies() throws SQLException {
+		if (conn != null) {
+			conn.close();
+		}
+		if (stm != null) {
+			stm.close();
+		}
+		if (rs != null) {
+			rs.close();
+		}
+	}
 
 	@Override
 	public void create(Image image) throws SQLException {
-		Connection conn = null;
-		PreparedStatement stm = null;
-		ResultSet rs = null;
+
 		try {
 			conn = getConnection();
-			stm = conn.prepareStatement("INSERT INTO TB_IMAGE(NAME, DESCRIPTION, QTDDOWNLOAD) VALUES (?, ?, ?)",
+			stm = conn.prepareStatement("INSERT INTO TB_IMAGE(NAME, DESCRIPTION, QTTDOWNLOAD) VALUES (?, ?, ?)",
 					Statement.RETURN_GENERATED_KEYS);
 			stm.setString(1, image.getName());
 			stm.setString(2, image.getDescription());
@@ -27,20 +41,12 @@ public class ImageDao implements IImagemDao {
 		} catch (Exception e) {
 			throw new SQLException(e.getMessage());
 		} finally {
-			if (conn != null) {
-				conn.close();
-			}
-			if (stm != null) {
-				stm.close();
-			}
-			if (rs != null) {
-				rs.close();
-			}
+			closeInstancies();
 		}
 	}
 
 	@Override
-	public Image read() {
+	public Image read(int id) {
 
 		return null;
 	}
