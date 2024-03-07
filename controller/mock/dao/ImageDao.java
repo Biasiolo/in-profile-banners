@@ -39,7 +39,7 @@ public class ImageDao implements IImagemDao {
 			stm.setInt(3, image.getQtdDownloads());
 			stm.executeUpdate();
 		} catch (Exception e) {
-			throw new SQLException("Erro ao cadastrar Imagem" + e.getMessage());
+			throw new SQLException("Erro ao cadastrar imagem" + e.getMessage());
 		} finally {
 			closeInstancies();
 		}
@@ -63,7 +63,7 @@ public class ImageDao implements IImagemDao {
 				System.out.println("Nenhuma imagem encontrada para o ID: " + id);
 			}
 		} catch (Exception e) {
-			throw new SQLException("Erro ao buscar Imagem: " + e.getMessage());
+			throw new SQLException("Erro ao buscar imagem: " + e.getMessage());
 		} finally {
 			closeInstancies();
 		}
@@ -77,7 +77,20 @@ public class ImageDao implements IImagemDao {
 	}
 
 	@Override
-	public void update() throws SQLException {
+	public void update(Image image) throws SQLException {
+
+		try {
+			conn = getConnection();
+			stm = conn.prepareStatement("UPDATE TB_IMAGE SET NAME = ?, DESCRIPTION = ? WHERE ID = ?");
+			stm.setString(1, image.getName());
+			stm.setString(2, image.getDescription());
+			stm.setInt(3, image.getId());
+			stm.executeUpdate();
+		} catch (Exception e) {
+			throw new SQLException("Erro ao atualizar informações da imagem: " + e.getMessage());
+		} finally {
+			closeInstancies();
+		}
 	}
 
 	@Override

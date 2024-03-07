@@ -13,7 +13,7 @@ public interface IImagemDao {
 
 	public List<Image> listAll() throws SQLException;
 
-	public void update() throws SQLException;
+	public void update(Image image) throws SQLException;
 
 	public void delete() throws SQLException;
 
