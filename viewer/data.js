@@ -1,10 +1,10 @@
 const data = [
   {
-    imageUrl: "./viewer/source/images/36.png",
-    altText: "Banner Ice Cube",
-    title: "Ice Cube",
-    description: "Biasiolo",
-    imageFileName: "36.png",
+    imageUrl: "./viewer/source/images/40.png",
+    altText: "Banner Dev",
+    title: "Dev",
+    description: "Pixellers Studio",
+    imageFileName: "40.png",
     tags: "design",
   },
   {
@@ -56,19 +56,19 @@ const data = [
     tags: "design",
   },
   {
-    imageUrl: "./viewer/source/images/39.png",
-    altText: "Banner Spider",
-    title: "Spider",
-    description: "Biasiolo",
-    imageFileName: "39.png",
-    tags: "design",
-  },
-  {
     imageUrl: "./viewer/source/images/28.png",
     altText: "Banner Open to Work",
     title: "Open to Work",
     description: "Biasiolo",
     imageFileName: "28.png",
+    tags: "design",
+  },
+  {
+    imageUrl: "./viewer/source/images/39.png",
+    altText: "Banner Spider",
+    title: "Spider",
+    description: "Biasiolo",
+    imageFileName: "39.png",
     tags: "design",
   },
   {
@@ -80,11 +80,11 @@ const data = [
     tags: "design",
   },
   {
-    imageUrl: "./viewer/source/images/40.png",
-    altText: "Banner Dev",
-    title: "Dev",
-    description: "Pixellers Studio",
-    imageFileName: "40.png",
+    imageUrl: "./viewer/source/images/36.png",
+    altText: "Banner Ice Cube",
+    title: "Ice Cube",
+    description: "Biasiolo",
+    imageFileName: "36.png",
     tags: "design",
   },
   {
