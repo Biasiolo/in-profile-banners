@@ -35,7 +35,7 @@ const data = [
     imageUrl: "./viewer/source/images/31.png",
     altText: "Banner Design",
     title: "Design",
-    description: "Biasiolo",
+    description: "Pixellers Studio",
     imageFileName: "31.png",
     tags: "design",
   },
