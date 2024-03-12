@@ -5,6 +5,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 import domain.Image;
@@ -72,8 +73,31 @@ public class ImageDao implements IImagemDao {
 
 	@Override
 	public List<Image> listAll() throws SQLException {
-
-		return null;
+		Image image = null;
+		List<Image> images = null;
+		try {
+			conn = getConnection();
+			stm = conn.prepareStatement("SELECT * FROM TB_IMAGE");
+			rs = stm.executeQuery();
+			images = new ArrayList<>();
+			
+			while (rs.next()) {
+				image = new Image();
+				image.setId(rs.getInt("ID"));
+				image.setName(rs.getString("NAME"));
+				image.setDescription(rs.getString("DESCRIPTION"));
+				image.setQtdDownloads(rs.getInt("QTTDOWNLOAD"));
+				images.add(image);
+			}
+		} catch (Exception e) {
+			if (images.isEmpty()) {
+				System.out.println("nenhuma imagem encontrada no banco de dados");
+			}
+			System.out.println("Erro ao listar imagens: " + e.getMessage());
+		} finally {
+			closeInstancies();
+		}
+		return images;
 	}
 
 	@Override
@@ -94,13 +118,29 @@ public class ImageDao implements IImagemDao {
 	}
 
 	@Override
-	public void delete() throws SQLException {
+	public void delete(int id) throws SQLException {
+		try {
+			conn = getConnection();
+			stm = conn.prepareStatement("DELETE FROM TB_IMAGE WHERE ID = ?");
+			stm.setInt(1, id);
+			stm.executeUpdate();
 
+		} catch (Exception e) {
+			System.out.println("Erro ao deletar imagem: " + e.getMessage());
+		} finally {
+			closeInstancies();
+		}
 	}
 
 	@Override
 	public void deleteAll() throws SQLException {
-
+		try {
+			conn = getConnection();
+			stm = conn.prepareStatement("TRUNCATE TABLE TB_IMAGE RESTART IDENTITY");
+			stm.execute();
+		} finally {
+			closeInstancies();
+		}
 	}
 
 	public Connection getConnection() throws SQLException {

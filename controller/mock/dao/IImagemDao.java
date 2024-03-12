@@ -15,7 +15,7 @@ public interface IImagemDao {
 
 	public void update(Image image) throws SQLException;
 
-	public void delete() throws SQLException;
+	public void delete(int id) throws SQLException;
 
 	public void deleteAll() throws SQLException;
 }
