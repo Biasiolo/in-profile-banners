@@ -1,12 +1,5 @@
 const data = [
-  {
-    imageUrl: "./viewer/source/images/40.png",
-    altText: "Banner Dev",
-    title: "Dev",
-    description: "Pixellers Studio",
-    imageFileName: "40.png",
-    tags: "design",
-  },
+  
   {
     imageUrl: "./viewer/source/images/16.png",
     altText: "Banner Back-End Matrix",
@@ -48,11 +41,11 @@ const data = [
     tags: "design",
   },
   {
-    imageUrl: "./viewer/source/images/38.png",
-    altText: "Banner Terminals",
-    title: "Terminals",
-    description: "Biasiolo",
-    imageFileName: "38.png",
+    imageUrl: "./viewer/source/images/41.png",
+    altText: "Banner IA",
+    title: "IA",
+    description: "Pixellers Studio",
+    imageFileName: "41.png",
     tags: "design",
   },
   {
@@ -80,6 +73,14 @@ const data = [
     tags: "design",
   },
   {
+    imageUrl: "./viewer/source/images/38.png",
+    altText: "Banner Terminals",
+    title: "Terminals",
+    description: "Biasiolo",
+    imageFileName: "38.png",
+    tags: "design",
+  },
+  {
     imageUrl: "./viewer/source/images/36.png",
     altText: "Banner Ice Cube",
     title: "Ice Cube",
@@ -88,11 +89,27 @@ const data = [
     tags: "design",
   },
   {
+    imageUrl: "./viewer/source/images/40.png",
+    altText: "Banner Dev",
+    title: "Dev",
+    description: "Pixellers Studio",
+    imageFileName: "40.png",
+    tags: "design",
+  },
+  {
     imageUrl: "./viewer/source/images/23.png",
     altText: "Banner Life is Good",
     title: "Life is Good",
     description: "Pixellers Studio",
     imageFileName: "23.png",
+    tags: "design",
+  },
+  {
+    imageUrl: "./viewer/source/images/42.png",
+    altText: "Banner O'Clock",
+    title: "O'Clock",
+    description: "Biasiolo",
+    imageFileName: "42.png",
     tags: "design",
   },
   {
@@ -160,14 +177,6 @@ const data = [
     tags: "design",
   },
   {
-    imageUrl: "./viewer/source/images/12.png",
-    altText: "Banner Yellow Brick",
-    title: "Yellow Brick",
-    description: "João Elton",
-    imageFileName: "12.png",
-    tags: "design",
-  },
-  {
     imageUrl: "./viewer/source/images/13.png",
     altText: "Banner Flash",
     title: "Flash",
@@ -192,6 +201,14 @@ const data = [
     tags: "design",
   },
   {
+    imageUrl: "./viewer/source/images/12.png",
+    altText: "Banner Yellow Brick",
+    title: "Yellow Brick",
+    description: "João Elton",
+    imageFileName: "12.png",
+    tags: "design",
+  },
+  {
     imageUrl: "./viewer/source/images/14.png",
     altText: "Banner Upstairs",
     title: "Upstairs",
@@ -213,6 +230,22 @@ const data = [
     title: "Sunday Morning",
     description: "L. Reed",
     imageFileName: "3.png",
+    tags: "design",
+  },
+  {
+    imageUrl: "./viewer/source/images/37.png",
+    altText: "Banner ETH",
+    title: "ETH",
+    description: "Pixellers Studio",
+    imageFileName: "37.png",
+    tags: "design",
+  },
+  {
+    imageUrl: "./viewer/source/images/43.png",
+    altText: "Banner Styles",
+    title: "Styles",
+    description: "Biasiolo",
+    imageFileName: "43.png",
     tags: "design",
   },
   {
@@ -312,11 +345,19 @@ const data = [
     tags: "design",
   },
   {
-    imageUrl: "./viewer/source/images/37.png",
-    altText: "Banner ETH",
-    title: "ETH",
+    imageUrl: "./viewer/source/images/44.png",
+    altText: "Banner Game On",
+    title: "Game On",
     description: "Pixellers Studio",
-    imageFileName: "37.png",
+    imageFileName: "44.png",
+    tags: "design",
+  },
+  {
+    imageUrl: "./viewer/source/images/45.png",
+    altText: "Banner ETH",
+    title: "Magnifying Glass",
+    description: "Pixellers Studio",
+    imageFileName: "45.png",
     tags: "design",
   }
   
