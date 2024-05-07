@@ -20,7 +20,7 @@ function createCard(banner) {
   const card = $("<div>").addClass("col-md-4 mb-4 banner-card");
   card.html(`
     <div class="card card22" data-tags="${banner.tags}">
-      <img src="${banner.imageUrl}" class="card-img-top" alt="${banner.altText}" loading="lazy">
+      <img src="${banner.imageUrl}" class="card-img-top" alt="${banner.altText}">
       <div class="card-body">
         <h4 class="card-title">${banner.title}</h4>
         <p class="card-text"><i class="bi bi-person-fill-up"></i> ${banner.description}</p>
@@ -40,17 +40,17 @@ function updatePagination() {
   const startButton = Math.max(1, currentPage - Math.floor(maxButtonsToShow / 2));
   const endButton = Math.min(totalPages, startButton + maxButtonsToShow - 1);
 
-  // Adiciona botão "Anterior"
-  const prevButton = $("<button>").addClass("btn btn-primary mx-1 fw-3").text("←");
-  prevButton.prop("disabled", currentPage === 1);
-  prevButton.click(function () {
+  // Adiciona botão "Primeira Página"
+  const firstButton = $("<button>").addClass("btn btn-primary mx-1 fw-3").text("⇤");
+  firstButton.prop("disabled", currentPage === 1);
+  firstButton.click(function () {
     if (currentPage > 1) {
-      currentPage--;
+      currentPage = 1;
       updatePage();
       scrollToTop();
     }
   });
-  paginationContainer.append(prevButton);
+  paginationContainer.append(firstButton);
 
   // Adiciona botões numéricos
   for (let i = startButton; i <= endButton; i++) {
@@ -64,22 +64,23 @@ function updatePagination() {
     paginationContainer.append(pageButton);
   }
 
-  // Adiciona botão "Próximo"
-  const nextButton = $("<button>").addClass("btn btn-primary mx-1 fw-3").text("→");
-  nextButton.prop("disabled", currentPage === totalPages);
-  nextButton.click(function () {
+  // Adiciona botão "Última Página"
+  const lastButton = $("<button>").addClass("btn btn-primary mx-1 fw-3").text("⇥");
+  lastButton.prop("disabled", currentPage === totalPages);
+  lastButton.click(function () {
     if (currentPage < totalPages) {
-      currentPage++;
+      currentPage = totalPages;
       updatePage();
       scrollToTop();
     }
   });
-  paginationContainer.append(nextButton);
+  paginationContainer.append(lastButton);
 }
+
 
 function scrollToTop() {
   const bannersSectionTop = $("#banners").offset().top;
-  $("html, body").animate({ scrollTop: bannersSectionTop });
+  $(window).scrollTop(bannersSectionTop);
 }
 
 function updatePage() {
