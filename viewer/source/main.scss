@@ -12,6 +12,7 @@ $borda: 1px solid rgb(209, 209, 209);
 }
 
 html {
+    scroll-behavior: smooth;
     body {
         background-color: $corFundo ;
         margin: 0;
