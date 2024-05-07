@@ -67,7 +67,7 @@ const data = [
   {
     imageUrl: "./viewer/source/images/54.png",
     altText: "Banner Setup Home",
-    title: "Setup Home",
+    title: "Setup",
     description: "Biasiolo",
     imageFileName: "54.png",
     tags: "design",

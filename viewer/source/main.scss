@@ -56,9 +56,16 @@ header {
     border-radius: 12px;
     border: $borda;
 
-    h2 {
+        h2 {
         font-size: 1.5rem;
         color: $corTexto;
+    }
+
+    img {
+        transition: transform 1s ease;
+        &:hover {
+            transform: scale(1.02);
+        }
     }
 }
 
@@ -83,6 +90,7 @@ header {
 
         &:hover {
             transform: rotatey(360deg);
+            
         }
     }
 
@@ -102,6 +110,7 @@ header {
         .card-body1 {
             font-size: 1.05rem;
             font-weight: 500;
+
         }
     }
 
@@ -149,7 +158,7 @@ header {
         font-weight: 600;
 
         &:hover {
-            background-color: #0a66c2;
+            background-color: #064481;
             color: white;
         }
     }
@@ -157,10 +166,13 @@ header {
 
 .card22 {
     box-shadow: 0 0 10px rgba(30, 39, 46, 0.4);
+    transition: transform 0.3s ease, background-color 0.3s ease; 
+}
 
-    &:hover {
-        transform: scale(1.02);
-    }
+.card22:hover {
+    transform: scale(1.02);
+    background-color: $CorAzul;
+    color: white;
 }
 
 .card-body {

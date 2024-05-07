@@ -51,6 +51,12 @@ header .logo:hover {
   font-size: 1.5rem;
   color: #1e272e;
 }
+#sobre img {
+  transition: transform 1s ease;
+}
+#sobre img:hover {
+  transform: scale(1.02);
+}
 
 #dicas {
   max-width: 90vw;
@@ -126,15 +132,19 @@ header .logo:hover {
   font-weight: 600;
 }
 #banners .download-btn:hover {
-  background-color: #0a66c2;
+  background-color: #064481;
   color: white;
 }
 
 .card22 {
   box-shadow: 0 0 10px rgba(30, 39, 46, 0.4);
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
+
 .card22:hover {
   transform: scale(1.02);
+  background-color: #0a66c2;
+  color: white;
 }
 
 .card-body {
