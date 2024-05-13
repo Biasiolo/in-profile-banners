@@ -9,7 +9,18 @@
 
 <url>
   <loc>https://profile-in-banners.vercel.app/</loc>
-  <lastmod>2024-02-29T02:29:54+00:00</lastmod>
+  <lastmod>2024-05-10T00:43:52+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://profile-in-banners.vercel.app/privacy.html</loc>
+  <lastmod>2024-05-10T00:43:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://profile-in-banners.vercel.app/index.html</loc>
+  <lastmod>2024-05-10T00:43:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
