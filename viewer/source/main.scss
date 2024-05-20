@@ -13,6 +13,7 @@ $borda: 1px solid rgb(209, 209, 209);
 
 html {
     scroll-behavior: smooth;
+
     body {
         background-color: $corFundo ;
         margin: 0;
@@ -26,20 +27,21 @@ html {
 }
 
 header {
-    background-color: $CorAzul; 
-    color: white; 
+    background-color: $CorAzul;
+    color: white;
     text-align: center;
     margin-bottom: 12px;
     border-bottom: $borda;
 
     h1 {
-        margin-bottom: 1rem; 
-        font-size: 2rem; 
+        margin-bottom: 1rem;
+        font-size: 2rem;
         font-weight: 500;
     }
 
     .logo {
         max-width: 60px;
+
         &:hover {
             transform: scale(1.1);
         }
@@ -55,13 +57,14 @@ header {
     border-radius: 12px;
     border: $borda;
 
-        h2 {
+    h2 {
         font-size: 1.5rem;
         color: $corTexto;
     }
 
     img {
         transition: transform 1s ease;
+
         &:hover {
             transform: scale(1.02);
         }
@@ -89,7 +92,7 @@ header {
 
         &:hover {
             transform: rotatey(360deg);
-            
+
         }
     }
 
@@ -105,6 +108,7 @@ header {
         height: 100%;
         font-size: 1rem;
         border-radius: 12px;
+
 
         .card-body1 {
             font-size: 1.05rem;
@@ -166,7 +170,7 @@ header {
 
 .card22 {
     box-shadow: 0 0 10px rgba(30, 39, 46, 0.4);
-    transition: transform 0.3s ease, background-color 0.3s ease; 
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .card22:hover {
@@ -198,7 +202,7 @@ footer {
     background-color: white;
     margin-top: 1rem;
     border-top: 1px solid rgb(209, 209, 209);
-    color:#0a66c2;
+    color: #0a66c2;
     font-weight: 400;
     font-size: 0.8rem;
     align-items: center;
@@ -206,6 +210,7 @@ footer {
     a {
         text-decoration: none;
     }
+
     img {
         max-width: 20px;
     }
@@ -222,49 +227,52 @@ footer {
     color: white;
 
 }
+
 /* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  * {
+/* Firefox */
+* {
     scrollbar-width: auto;
     scrollbar-color: #0a66c2 #ffffff;
-  }
+}
 
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
     width: 16px;
-  }
+}
 
-  *::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
     background: #ffffff;
-  }
+}
 
-  *::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
     background-color: #0a66c2;
     border-radius: 10px;
     border: 3px solid #ffffff;
-  }
+}
 
 
-  /* Estilo do botão de alternância */
+/* Estilo do botão de alternância */
 .toggle-switch {
     display: inline-block;
     position: relative;
-    width: 60px; /* Reduzindo a largura do botão */
-    height: 28px; /* Reduzindo a altura do botão */
-    overflow: hidden; /* Garante que o ícone não fique visível fora do botão */
-    cursor: pointer
-    
+    width: 60px;
+    /* Reduzindo a largura do botão */
+    height: 28px;
+    /* Reduzindo a altura do botão */
+    overflow: hidden;
+    /* Garante que o ícone não fique visível fora do botão */
+    cursor: pointer;
 
-  }
-  
-  /* Estilo do input do botão de alternância */
-  .toggle-switch input {
+
+}
+
+
+.toggle-switch input {
     display: none;
+}
 
-  }
-  
-  /* Estilo do controle deslizante do botão de alternância */
-  .slider {
+/* Estilo do controle deslizante do botão de alternância */
+.slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -272,73 +280,84 @@ footer {
     right: 0;
     bottom: 0;
     background-color: #b3b0b0;
-    border-radius: 28px; /* Ajustando o border-radius proporcionalmente */
+    border-radius: 28px;
+    /* Ajustando o border-radius proporcionalmente */
     transition: 0.4s;
-  }
-  
-  /* Estilo da bolinha deslizante */
-  .slider:before {
+
+}
+
+/* Estilo da bolinha deslizante */
+.slider:before {
     content: "";
     position: absolute;
-    height: 20px; /* Reduzindo a altura da bolinha */
-    width: 20px; /* Reduzindo a largura da bolinha */
+    height: 20px;
+    /* Reduzindo a altura da bolinha */
+    width: 20px;
+    /* Reduzindo a largura da bolinha */
     left: 4px;
     bottom: 4px;
-    background-color: rgb(7, 7, 7); /* Cor fixa da bolinha (laranja) */
+    background-color: rgb(7, 7, 7);
+    /* Cor fixa da bolinha (laranja) */
     border-radius: 50%;
     transition: 0.4s;
-  }
-  
-  /* Estilo do botão de alternância quando está ativo (ligado) */
-  .toggle-switch input:checked + .slider {
-    background-color: #f5f382; /* Cor de fundo quando ligado */
-  }
-  
-  /* Estilo da bolinha deslizante quando o botão de alternância está ativo */
-  .toggle-switch input:checked + .slider:before {
-    transform: translateX(32px); /* Ajustando a distância para acomodar o ícone da lua */
-  }
-  
-  /* Estilo do ícone de alternância (sol e lua) */
-  .mode-icon {
+}
+
+/* Estilo do botão de alternância quando está ativo (ligado) */
+.toggle-switch input:checked+.slider {
+    background-color: #f5f382;
+    /* Cor de fundo quando ligado */
+}
+
+/* Estilo da bolinha deslizante quando o botão de alternância está ativo */
+.toggle-switch input:checked+.slider:before {
+    transform: translateX(32px);
+    /* Ajustando a distância para acomodar o ícone da lua */
+}
+
+/* Estilo do ícone de alternância (sol e lua) */
+.mode-icon {
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     height: 100%;
-    width: 60px; /* Tamanho igual ao botão */
+    width: 60px;
+    /* Tamanho igual ao botão */
     top: 0;
     left: 0;
     transition: transform 0.4s;
-  }
-  
-  /* Estilo do ícone do sol e da lua */
-  .sun-icon,
-  .moon-icon {
-    font-size: 20px; /* Reduzindo o tamanho do ícone */
+}
+
+/* Estilo do ícone do sol e da lua */
+.sun-icon,
+.moon-icon {
+    font-size: 20px;
+    /* Reduzindo o tamanho do ícone */
     transition: opacity 0.4s;
     position: absolute;
     top: 4px;
-    opacity: 0; /* Inicialmente oculto */
-  }
-  
-  /* Estilo do ícone da lua quando o botão está ativo */
-  .moon-icon {
+    opacity: 0;
+    /* Inicialmente oculto */
+}
+
+/* Estilo do ícone da lua quando o botão está ativo */
+.moon-icon {
     right: 4px;
-    color: silver;
-  }
-  .sun-icon {
-    color:orange;
-  }
-  
-  /* Classe para tornar elementos visíveis */
-  .visible {
+    color: rgb(247, 247, 247);
+}
+
+.sun-icon {
+    color: orange;
+
+}
+
+/* Classe para tornar elementos visíveis */
+.visible {
     opacity: 1;
-  }
-  
-  /* Estilo do ícone do sol quando o botão está inativo (desligado) */
-  .sun-icon {
+}
+
+/* Estilo do ícone do sol quando o botão está inativo (desligado) */
+.sun-icon {
     left: -18px;
 
-  }
-  
+}
