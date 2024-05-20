@@ -195,6 +195,16 @@ header {
     }
 }
 
+#ads {
+    background-color: $corBranco;
+    padding: 0.5rem;
+    max-width: 90vw;
+    margin: 0 auto;
+    margin-top: 8px;
+    border-radius: 12px;
+    border: $borda;
+}
+
 footer {
     padding: 0.1rem;
     bottom: 0;

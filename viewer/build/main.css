@@ -161,6 +161,16 @@ header .logo:hover {
   margin-top: 0.5rem;
 }
 
+#ads {
+  background-color: white;
+  padding: 0.5rem;
+  max-width: 90vw;
+  margin: 0 auto;
+  margin-top: 8px;
+  border-radius: 12px;
+  border: 1px solid rgb(209, 209, 209);
+}
+
 footer {
   padding: 0.1rem;
   bottom: 0;
