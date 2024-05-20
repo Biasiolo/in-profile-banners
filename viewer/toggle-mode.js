@@ -10,7 +10,7 @@
 
             const updateUI = () => {
                 const isChecked = $toggleSwitch.find('input[type="checkbox"]').prop('checked');
-                const backgroundColor = isChecked ? '#f5f382' : '#022950';
+                const backgroundColor = isChecked ? '#f4f2ee' : '#022950';
                 const bodyColor = isChecked ? '#f4f2ee' : '#050505';
                 const textColor = isChecked ? '#000000' : '#ffffff'; // Cores do texto
                 const iconPosition = isChecked ? '26px' : '0';

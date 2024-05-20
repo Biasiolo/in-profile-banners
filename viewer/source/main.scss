@@ -252,6 +252,7 @@ footer {
     width: 60px; /* Reduzindo a largura do botão */
     height: 28px; /* Reduzindo a altura do botão */
     overflow: hidden; /* Garante que o ícone não fique visível fora do botão */
+    cursor: pointer
     
 
   }
@@ -324,10 +325,10 @@ footer {
   /* Estilo do ícone da lua quando o botão está ativo */
   .moon-icon {
     right: 4px;
-    color: silver;
+    color: rgb(238, 229, 229);
   }
   .sun-icon {
-    color:orangered;
+    color:orange;
   }
   
   /* Classe para tornar elementos visíveis */
