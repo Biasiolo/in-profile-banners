@@ -31,7 +31,7 @@ header {
     color: white;
     text-align: center;
     margin-bottom: 16px;
-    border-bottom: $borda;
+    border-bottom: 1px solid #044688;
 
     h1 {
         margin-bottom: 1rem;
@@ -211,7 +211,7 @@ footer {
     width: 100%;
     background-color: $CorAzul;
     margin-top: 1rem;
-    border-top: 1px solid rgb(209, 209, 209);
+    border-top: 1px solid #044688;
     color: white;
     font-weight: 400;
     font-size: 0.8rem;
