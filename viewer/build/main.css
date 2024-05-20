@@ -289,6 +289,11 @@ footer img {
 /* Estilo do ícone da lua quando o botão está ativo */
 .moon-icon {
   right: 4px;
+  color: silver;
+}
+
+.sun-icon {
+  color: orangered;
 }
 
 /* Classe para tornar elementos visíveis */
