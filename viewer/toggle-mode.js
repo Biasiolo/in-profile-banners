@@ -33,6 +33,10 @@
             });
         });
     };
+
+    
 }(jQuery));
 
+$('.toggle-switch input[type="checkbox"]').prop('checked', true); // Inicialize o botão no modo claro
 $('.toggle-switch').toggleSwitch(); // Inicialize o plugin nas classes 'toggle-switch' em seu HTML
+
