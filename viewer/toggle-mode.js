@@ -6,7 +6,7 @@
             const $modeIcon = $toggleSwitch.find('.mode-icon');
             const $sunIcon = $toggleSwitch.find('.sun-icon');
             const $moonIcon = $toggleSwitch.find('.moon-icon');
-            const $contribuaSection = $('#contribua'); // Adicionado para selecionar a seção contribua
+            const $contribuaSection = $('#contribua'); // seção contribua
 
             const updateUI = () => {
                 const isChecked = $toggleSwitch.find('input[type="checkbox"]').prop('checked');
@@ -20,7 +20,7 @@
                 $modeIcon.css('transform', `translateX(${iconPosition})`);
                 $sunIcon.toggleClass('visible', isChecked);
                 $moonIcon.toggleClass('visible', !isChecked);
-                $contribuaSection.css('color', textColor); // Aplica a cor do texto à seção contribua
+                $contribuaSection.css('color', textColor); // cor do texto seção contribua
             };
 
             updateUI(); // Inicialização
@@ -37,5 +37,5 @@
     
 }(jQuery));
 
-$('.toggle-switch input[type="checkbox"]').prop('checked', true); // Inicialize o botão no modo claro
-$('.toggle-switch').toggleSwitch(); // Inicialize o plugin nas classes 'toggle-switch' em seu HTML
+$('.toggle-switch input[type="checkbox"]').prop('checked', true); // botão no modo claro
+$('.toggle-switch').toggleSwitch(); 
