@@ -9,18 +9,18 @@ html {
   scroll-behavior: smooth;
 }
 html body {
-  background-color: #f4f2ee;
+  background-color: rgb(244, 242, 238);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #1e272e;
+  color: rgb(30, 39, 46);
 }
 
 header {
-  background-color: #0a66c2;
+  background-color: rgb(10, 102, 194);
   color: white;
   text-align: center;
   margin-bottom: 16px;
@@ -39,7 +39,7 @@ header .logo:hover {
 }
 
 #sobre {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.7);
   padding: 0.5rem;
   max-width: 90vw;
   margin: 0 auto;
@@ -49,7 +49,7 @@ header .logo:hover {
 }
 #sobre h2 {
   font-size: 1.5rem;
-  color: #1e272e;
+  color: rgb(30, 39, 46);
 }
 #sobre img {
   transition: transform 1s ease;
@@ -65,7 +65,7 @@ header .logo:hover {
 }
 #dicas h3 {
   font-size: 1.3rem;
-  background-color: #0a66c2;
+  background-color: rgb(10, 102, 194);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   padding: 8px;
@@ -88,6 +88,7 @@ header .logo:hover {
   height: 100%;
   font-size: 1rem;
   border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 #dicas .card .card-body1 {
   font-size: 1.05rem;
@@ -104,7 +105,7 @@ header .logo:hover {
 }
 
 #banners {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.7);
   padding: 0.5rem;
   padding-top: 0;
   max-width: 90vw;
@@ -115,7 +116,7 @@ header .logo:hover {
 }
 #banners h3 {
   font-size: 1.5rem;
-  background-color: #0a66c2;
+  background-color: rgb(10, 102, 194);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   padding: 8px;
@@ -127,7 +128,7 @@ header .logo:hover {
   border-radius: 30px;
   padding: 5px 20px;
   background-color: white;
-  color: #0a66c2;
+  color: rgb(10, 102, 194);
   border: 2px solid #0a66c2;
   font-weight: 600;
 }
@@ -135,15 +136,24 @@ header .logo:hover {
   background-color: #064481;
   color: white;
 }
+#banners .card {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+#banners .card:hover {
+  transform: scale(1.02);
+  background-color: rgb(10, 102, 194);
+  color: white;
+}
 
 .card22 {
   box-shadow: 0 0 10px rgba(30, 39, 46, 0.4);
   transition: transform 0.3s ease, background-color 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .card22:hover {
   transform: scale(1.02);
-  background-color: #0a66c2;
+  background-color: rgb(10, 102, 194);
   color: white;
 }
 
@@ -161,8 +171,12 @@ header .logo:hover {
   margin-top: 0.5rem;
 }
 
+#contribua .card {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
 #ads {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.7);
   padding: 0.5rem;
   max-width: 90vw;
   margin: 0 auto;
@@ -175,7 +189,7 @@ footer {
   padding: 0.1rem;
   bottom: 0;
   width: 100%;
-  background-color: #0a66c2;
+  background-color: rgb(10, 102, 194);
   margin-top: 1rem;
   border-top: 1px solid #1c5d9e;
   color: white;

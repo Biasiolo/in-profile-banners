@@ -1,7 +1,7 @@
-$corFundo: #f4f2ee;
-$corBranco: white;
-$CorAzul: #0a66c2;
-$corTexto: #1e272e;
+$corFundo: rgb(244, 242, 238);
+$corBranco: rgb(255, 255, 255);
+$CorAzul: rgb(10, 102, 194);
+$corTexto: rgb(30, 39, 46);
 $borda: 1px solid rgb(209, 209, 209);
 
 
@@ -49,7 +49,8 @@ header {
 }
 
 #sobre {
-    background-color: $corBranco;
+    background-color: rgba(255, 255, 255, 0.7);
+    
     padding: 0.5rem;
     max-width: 90vw;
     margin: 0 auto;
@@ -108,6 +109,7 @@ header {
         height: 100%;
         font-size: 1rem;
         border-radius: 12px;
+        background-color: rgba(255, 255, 255, 0.7);
 
 
         .card-body1 {
@@ -133,7 +135,7 @@ header {
 
 
 #banners {
-    background-color: $corBranco;
+    background-color: rgba(255, 255, 255, 0.7);
     padding: 0.5rem;
     padding-top: 0;
     max-width: 90vw;
@@ -166,11 +168,21 @@ header {
             color: white;
         }
     }
+    .card {
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+
+    .card:hover {
+        transform: scale(1.02);
+        background-color: $CorAzul;
+        color: white;
+    }
 }
 
 .card22 {
     box-shadow: 0 0 10px rgba(30, 39, 46, 0.4);
     transition: transform 0.3s ease, background-color 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 .card22:hover {
@@ -195,8 +207,15 @@ header {
     }
 }
 
+#contribua {
+    .card {
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+
+}
+
 #ads {
-    background-color: $corBranco;
+    background-color: rgba(255, 255, 255, 0.7);
     padding: 0.5rem;
     max-width: 90vw;
     margin: 0 auto;
