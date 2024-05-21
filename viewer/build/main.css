@@ -137,7 +137,7 @@ header .logo:hover {
   color: white;
 }
 #banners .card {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 #banners .card:hover {
   transform: scale(1.02);
