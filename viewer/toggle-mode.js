@@ -21,7 +21,14 @@
                 $sunIcon.toggleClass('visible', isChecked);
                 $moonIcon.toggleClass('visible', !isChecked);
                 $contribuaSection.css('color', textColor); // cor do texto seção contribua
+
+                // Armazenamento local da seleção do usuário
+                localStorage.setItem('isDarkMode', isChecked);
             };
+
+            // Recuperar o estado do modo escuro do armazenamento local, se disponível
+            const isDarkMode = localStorage.getItem('isDarkMode') === 'false';
+            $toggleSwitch.find('input[type="checkbox"]').prop('checked', isDarkMode);
 
             updateUI(); // Inicialização
 
@@ -37,5 +44,9 @@
     
 }(jQuery));
 
-$('.toggle-switch input[type="checkbox"]').prop('checked', true); // botão no modo claro
-$('.toggle-switch').toggleSwitch(); 
+// Inicialize o botão no modo claro se não houver preferência armazenada no local storage
+if (localStorage.getItem('isDarkMode') === null) {
+    $('.toggle-switch input[type="checkbox"]').prop('checked', false);
+}
+
+$('.toggle-switch').toggleSwitch(); // Inicialize o plugin nas classes 'toggle-switch' em seu HTML
