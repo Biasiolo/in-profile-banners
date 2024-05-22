@@ -50,13 +50,13 @@ header {
 
 #sobre {
     background-color: rgba(255, 255, 255, 0.7);
-    
     padding: 0.5rem;
     max-width: 90vw;
     margin: 0 auto;
     margin-bottom: 12px;
     border-radius: 12px;
-    border: $borda;
+    border:none;
+    box-shadow: 0 0 10px rgba(30, 39, 46, 0.4);
 
     h2 {
         font-size: 1.5rem;
@@ -85,6 +85,7 @@ header {
         border-top-right-radius: 12px;
         padding: 8px;
         color: white;
+
     }
 
     .logo3 {
@@ -110,7 +111,8 @@ header {
         font-size: 1rem;
         border-radius: 12px;
         background-color: rgba(255, 255, 255, 0.7);
-
+        border:none;
+        box-shadow: 0 0 10px rgba(30, 39, 46, 0.4);
 
         .card-body1 {
             font-size: 1.05rem;
@@ -137,12 +139,13 @@ header {
 #banners {
     background-color: rgba(255, 255, 255, 0.7);
     padding: 0.5rem;
-    padding-top: 0;
+
     max-width: 90vw;
     margin: 0 auto;
     margin-top: 8px;
     border-radius: 12px;
-    border: $borda;
+    border: none;
+    box-shadow: 0 0 10px rgba(30, 39, 46, 0.4);
 
     h3 {
         font-size: 1.5rem;
@@ -153,6 +156,7 @@ header {
         color: white;
         text-align: center;
         margin-bottom: 1rem;
+
     }
 
     .download-btn {
@@ -210,6 +214,8 @@ header {
 #contribua {
     .card {
         background-color: rgba(255, 255, 255, 0.7);
+        border: none;
+    box-shadow: 0 0 10px rgba(30, 39, 46, 0.4);
     }
 
 }
@@ -221,7 +227,8 @@ header {
     margin: 0 auto;
     margin-top: 8px;
     border-radius: 12px;
-    border: $borda;
+    border: none;
+    box-shadow: 0 0 10px rgba(30, 39, 46, 0.4);
 }
 
 footer {
