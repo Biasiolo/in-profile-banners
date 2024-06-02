@@ -1,0 +1,400 @@
+$corFundo: rgb(244, 242, 238);
+$corBranco: rgb(255, 255, 255);
+$CorAzul: rgb(10, 102, 194);
+$corTexto: rgb(30, 39, 46);
+$borda: 1px solid rgb(145, 145, 145);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+
+    body {
+        background-color: $corFundo ;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: $corTexto;
+    }
+}
+
+header {
+    background-color: $CorAzul;
+    color: white;
+    text-align: center;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #1c5d9e;
+
+    h1 {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .logo {
+        max-width: 60px;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+#sobre {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0.5rem;
+    max-width: 90vw;
+    margin: 0 auto;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    border:none;
+    box-shadow: 0 0 10px rgba(30, 39, 46, 0.4);
+
+    h2 {
+        font-size: 1.5rem;
+        color: $corTexto;
+    }
+
+    img {
+        transition: transform 1s ease;
+
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+}
+
+
+#dicas {
+    max-width: 90vw;
+    margin: 0 auto;
+    justify-content: space-between;
+
+    h3 {
+        font-size: 1.3rem;
+        background-color: $CorAzul;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        padding: 8px;
+        color: white;
+
+    }
+
+    .logo3 {
+        max-width: 50px;
+        transition: transform 1.5s ease;
+
+        &:hover {
+            transform: rotatey(360deg);
+
+        }
+    }
+
+    .download {
+        transition: transform 2s ease;
+
+        &:hover {
+            transform: rotatex(360deg);
+        }
+    }
+
+    .card {
+        height: 100%;
+        font-size: 1rem;
+        border-radius: 12px;
+        background-color: rgba(255, 255, 255, 0.7);
+        border:none;
+        box-shadow: 0 0 10px rgba(30, 39, 46, 0.4);
+
+        .card-body1 {
+            font-size: 1.05rem;
+            font-weight: 500;
+
+        }
+    }
+
+    .gratis {
+        font-size: 3.5rem;
+        font-family: cursive;
+    }
+
+    ul {
+        li {
+            list-style: none;
+            text-decoration: none;
+            text-align: center;
+        }
+    }
+}
+
+
+#banners {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0.5rem;
+
+    max-width: 90vw;
+    margin: 0 auto;
+    margin-top: 8px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 0 10px rgba(30, 39, 46, 0.4);
+
+    h3 {
+        font-size: 1.5rem;
+        background-color: $CorAzul;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        padding: 8px;
+        color: white;
+        text-align: center;
+        margin-bottom: 1rem;
+
+    }
+
+    .download-btn {
+        border-radius: 30px;
+        padding: 5px 20px;
+        background-color: rgba(228, 228, 228, 0.7);
+        color: #024180;
+        border: 2px solid #024180;
+        font-weight: 600;
+
+        &:hover {
+            background-color: #01274d;
+            color: white;
+        }
+    }
+    .card {
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .card:hover {
+        transform: scale(1.02);
+        background-color: $CorAzul;
+        color: white;
+    }
+}
+
+.card22 {
+    box-shadow: 0 0 10px rgba(30, 39, 46, 0.4);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.card22:hover {
+    transform: scale(1.02);
+    background-color: $CorAzul;
+    color: white;
+}
+
+.card-body {
+    text-align: center;
+
+    .card-title {
+        border-bottom: $borda;
+        font-weight: 600;
+        font-size: 1.3rem;
+        padding: 0.5rem;
+    }
+
+    .card-text {
+        font-weight: 500;
+        margin-top: 0.5rem;
+    }
+}
+
+#contribua {
+    .card {
+        background-color: rgba(255, 255, 255, 0.7);
+        border: none;
+    box-shadow: 0 0 10px rgba(30, 39, 46, 0.4);
+    }
+
+}
+
+#ads {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0.5rem;
+    max-width: 90vw;
+    margin: 0 auto;
+    margin-top: 8px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 0 10px rgba(30, 39, 46, 0.4);
+}
+
+footer {
+    padding: 0.1rem;
+    bottom: 0;
+    width: 100%;
+    background-color: $CorAzul;
+    margin-top: 1rem;
+    border-top: 1px solid #1c5d9e;
+    color: white;
+    font-weight: 400;
+    font-size: 0.8rem;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    img {
+        max-width: 20px;
+    }
+}
+
+.modal-content {
+    max-width: 200px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.modal-header {
+    background-color: #0a66c2;
+    color: white;
+
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #0a66c2 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #0a66c2;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+}
+
+
+/* Estilo do botão de alternância */
+.toggle-switch {
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    /* Reduzindo a largura do botão */
+    height: 28px;
+    /* Reduzindo a altura do botão */
+    overflow: hidden;
+    /* Garante que o ícone não fique visível fora do botão */
+    cursor: pointer;
+
+
+}
+
+
+.toggle-switch input {
+    display: none;
+}
+
+/* Estilo do controle deslizante do botão de alternância */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #b3b0b0;
+    border-radius: 28px;
+    /* Ajustando o border-radius proporcionalmente */
+    transition: 0.4s;
+
+}
+
+/* Estilo da bolinha deslizante */
+.slider:before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    /* Reduzindo a altura da bolinha */
+    width: 20px;
+    /* Reduzindo a largura da bolinha */
+    left: 4px;
+    bottom: 4px;
+    background-color: rgb(7, 7, 7);
+    /* Cor fixa da bolinha (laranja) */
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+/* Estilo do botão de alternância quando está ativo (ligado) */
+.toggle-switch input:checked+.slider {
+    background-color: #f5f382;
+    /* Cor de fundo quando ligado */
+}
+
+/* Estilo da bolinha deslizante quando o botão de alternância está ativo */
+.toggle-switch input:checked+.slider:before {
+    transform: translateX(32px);
+    /* Ajustando a distância para acomodar o ícone da lua */
+}
+
+/* Estilo do ícone de alternância (sol e lua) */
+.mode-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 60px;
+    /* Tamanho igual ao botão */
+    top: 0;
+    left: 0;
+    transition: transform 0.4s;
+}
+
+/* Estilo do ícone do sol e da lua */
+.sun-icon,
+.moon-icon {
+    font-size: 20px;
+    /* Reduzindo o tamanho do ícone */
+    transition: opacity 0.4s;
+    position: absolute;
+    top: 4px;
+    opacity: 0;
+    /* Inicialmente oculto */
+}
+
+/* Estilo do ícone da lua quando o botão está ativo */
+.moon-icon {
+    right: 4px;
+    color: rgb(247, 247, 247);
+}
+
+.sun-icon {
+    color: orange;
+
+}
+
+/* Classe para tornar elementos visíveis */
+.visible {
+    opacity: 1;
+}
+
+/* Estilo do ícone do sol quando o botão está inativo (desligado) */
+.sun-icon {
+    left: -18px;
+
+}
